@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GSTModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="GSTModelStoreContainer">
+    <EntitySet Name="Banks" EntityType="GSTModel.Store.Banks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bill_detail" EntityType="GSTModel.Store.bill_detail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Bills" EntityType="GSTModel.Store.Bills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Credit_No" EntityType="GSTModel.Store.Credit_No" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Credit_No_De" EntityType="GSTModel.Store.Credit_No_De" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="customer" EntityType="GSTModel.Store.customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Est_Details" EntityType="GSTModel.Store.Est_Details" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Estimates" EntityType="GSTModel.Store.Estimates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="expenses" EntityType="GSTModel.Store.expenses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="goods" EntityType="GSTModel.Store.goods" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invoice" EntityType="GSTModel.Store.Invoice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invoice_Dei" EntityType="GSTModel.Store.Invoice_Dei" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Payment_made" EntityType="GSTModel.Store.Payment_made" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Payment_recive" EntityType="GSTModel.Store.Payment_recive" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="pur_detail" EntityType="GSTModel.Store.pur_detail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="purchase_order" EntityType="GSTModel.Store.purchase_order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="reccuring_exp" EntityType="GSTModel.Store.reccuring_exp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Recuring_Invoice" EntityType="GSTModel.Store.Recuring_Invoice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Recuring_Invoice_De" EntityType="GSTModel.Store.Recuring_Invoice_De" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Retainer_Invoice" EntityType="GSTModel.Store.Retainer_Invoice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Retainer_Invoice_De" EntityType="GSTModel.Store.Retainer_Invoice_De" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sales_orders" EntityType="GSTModel.Store.Sales_orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sales_orders_De" EntityType="GSTModel.Store.Sales_orders_De" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="service" EntityType="GSTModel.Store.service" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Trasaction" EntityType="GSTModel.Store.Trasaction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vendor" EntityType="GSTModel.Store.vendor" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Banks">
+    <Key>
+      <PropertyRef Name="Acc_id" />
+    </Key>
+    <Property Name="Acc_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Bank_name" Type="varchar" MaxLength="255" />
+    <Property Name="Acc_name" Type="varchar" MaxLength="255" />
+    <Property Name="Acc_no" Type="varchar" MaxLength="11" />
+    <Property Name="Ifsc" Type="varchar" MaxLength="13" />
+    <Property Name="Bra_add" Type="varchar" MaxLength="255" />
+    <Property Name="Acc_type" Type="varchar(max)" />
+    <Property Name="Opening_bal" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="bill_detail">
+    <Key>
+      <PropertyRef Name="BillsID" />
+    </Key>
+    <Property Name="BillsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vendor_name" Type="varchar" MaxLength="255" />
+    <Property Name="Pur_ord" Type="varchar" MaxLength="15" />
+    <Property Name="Bill_date" Type="varchar" MaxLength="255" />
+    <Property Name="Due_date" Type="varchar" MaxLength="255" />
+    <Property Name="Items" Type="varchar" MaxLength="255" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+    <Property Name="Ref" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Bills">
+    <Key>
+      <PropertyRef Name="BillsID" />
+    </Key>
+    <Property Name="BillsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Vendor_name" Type="varchar" MaxLength="255" />
+    <Property Name="Due_date" Type="varchar" MaxLength="255" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Paid" Type="varchar" MaxLength="100" />
+    <Property Name="Bal" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Credit_No">
+    <Key>
+      <PropertyRef Name="Credit_NoID" />
+    </Key>
+    <Property Name="Credit_NoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date_c" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Invoice" Type="varchar" MaxLength="15" />
+    <Property Name="Status" Type="varchar(max)" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Balance" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Credit_No_De">
+    <Key>
+      <PropertyRef Name="Credit_No_DeID" />
+    </Key>
+    <Property Name="Credit_No_DeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Items" Type="varchar(max)" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Sub_total" Type="varchar" MaxLength="100" />
+    <Property Name="Dis" Type="varchar" MaxLength="100" />
+    <Property Name="Adj" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="customerID" />
+    </Key>
+    <Property Name="customerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_no" Type="int" />
+    <Property Name="Salut" Type="varchar" MaxLength="255" />
+    <Property Name="First_name" Type="varchar" MaxLength="255" />
+    <Property Name="Last_name" Type="varchar" MaxLength="255" />
+    <Property Name="Email" Type="varchar" MaxLength="255" />
+    <Property Name="Mob1" Type="varchar" MaxLength="100" />
+    <Property Name="Mob2" Type="varchar" MaxLength="100" />
+    <Property Name="Web" Type="varchar" MaxLength="255" />
+    <Property Name="Add" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Est_Details">
+    <Key>
+      <PropertyRef Name="Est_DetailsID" />
+    </Key>
+    <Property Name="Est_DetailsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="15" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Expire_date" Type="varchar" MaxLength="255" />
+    <Property Name="Items" Type="varchar" MaxLength="255" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Sub_Total" Type="varchar" MaxLength="100" />
+    <Property Name="Discount" Type="varchar" MaxLength="100" />
+    <Property Name="Adjustment" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Estimates">
+    <Key>
+      <PropertyRef Name="EstimatesID" />
+    </Key>
+    <Property Name="EstimatesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="15" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="varchar(max)" />
+    <Property Name="Amount" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="expenses">
+    <Key>
+      <PropertyRef Name="expensesID" />
+    </Key>
+    <Property Name="expensesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Expense_acc" Type="varchar" MaxLength="255" />
+    <Property Name="Reference" Type="varchar" MaxLength="255" />
+    <Property Name="Amount" Type="varchar" MaxLength="100" />
+    <Property Name="Vendor" Type="varchar" MaxLength="255" />
+    <Property Name="Paidby" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Billno" Type="varchar" MaxLength="15" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="Pay_details" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="goods">
+    <Key>
+      <PropertyRef Name="goodsID" />
+    </Key>
+    <Property Name="goodsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Prod_name" Type="varchar" MaxLength="255" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Unit" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Purchasep" Type="varchar" MaxLength="100" />
+    <Property Name="Salesp" Type="varchar" MaxLength="100" />
+    <Property Name="Stockl" Type="varchar" MaxLength="15" />
+    <Property Name="GST" Type="varchar" MaxLength="15" />
+    <Property Name="Desc" Type="varchar(max)" />
+    <Property Name="Ad_refno" Type="varchar" MaxLength="15" />
+    <Property Name="Ad_date" Type="varchar" MaxLength="255" />
+    <Property Name="Ad_qty" Type="varchar" MaxLength="15" />
+    <Property Name="Ad_reason" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="I_date" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="So_no" Type="varchar" MaxLength="15" />
+    <Property Name="Satus" Type="varchar(max)" />
+    <Property Name="Due_date" Type="varchar" MaxLength="255" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Paid" Type="varchar" MaxLength="100" />
+    <Property Name="Bal_due" Type="varchar" MaxLength="100" />
+    <Property Name="Ret_inovice" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Invoice_Dei">
+    <Key>
+      <PropertyRef Name="Invoice_DeiID" />
+    </Key>
+    <Property Name="Invoice_DeiID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="I_date" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="So_no" Type="varchar" MaxLength="15" />
+    <Property Name="Due_date" Type="varchar" MaxLength="255" />
+    <Property Name="Items" Type="varchar(max)" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Sub_total" Type="varchar" MaxLength="100" />
+    <Property Name="Disc" Type="varchar" MaxLength="100" />
+    <Property Name="Adj" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Payment_made">
+    <Key>
+      <PropertyRef Name="Payment_madeID" />
+    </Key>
+    <Property Name="Payment_madeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Type" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Vendor_name" Type="varchar" MaxLength="255" />
+    <Property Name="Bill_no" Type="varchar" MaxLength="255" />
+    <Property Name="Mode" Type="varchar" MaxLength="255" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Desc" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Payment_recive">
+    <Key>
+      <PropertyRef Name="Payment_reciveID" />
+    </Key>
+    <Property Name="Payment_reciveID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date_p" Type="varchar" MaxLength="255" />
+    <Property Name="Type" Type="varchar(max)" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Mode" Type="varchar(max)" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Desc" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="pur_detail">
+    <Key>
+      <PropertyRef Name="purchase_orderID" />
+    </Key>
+    <Property Name="purchase_orderID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Vendor_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Del_date" Type="varchar" MaxLength="255" />
+    <Property Name="Items" Type="varchar" MaxLength="255" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="purchase_order">
+    <Key>
+      <PropertyRef Name="purchase_orderID" />
+    </Key>
+    <Property Name="purchase_orderID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Vendor_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Del_date" Type="varchar" MaxLength="255" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Paid" Type="varchar" MaxLength="100" />
+    <Property Name="Bal" Type="varchar" MaxLength="100" />
+    <Property Name="Pay_detail" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="reccuring_exp">
+    <Key>
+      <PropertyRef Name="reccuring_expID" />
+    </Key>
+    <Property Name="reccuring_expID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Expense_acc" Type="varchar" MaxLength="255" />
+    <Property Name="Reference" Type="varchar" MaxLength="255" />
+    <Property Name="Amount" Type="varchar" MaxLength="100" />
+    <Property Name="Vendor" Type="varchar" MaxLength="255" />
+    <Property Name="Paidby" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Billno" Type="varchar" MaxLength="15" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="Prof_name" Type="varchar" MaxLength="255" />
+    <Property Name="Repeat" Type="varchar" MaxLength="15" />
+    <Property Name="Start_date" Type="varchar" MaxLength="255" />
+    <Property Name="End_date" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Recuring_Invoice">
+    <Key>
+      <PropertyRef Name="Recuring_InvoiceID" />
+    </Key>
+    <Property Name="Recuring_InvoiceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Pro_name" Type="varchar" MaxLength="255" />
+    <Property Name="Freq" Type="varchar(max)" />
+    <Property Name="Last_date" Type="varchar" MaxLength="255" />
+    <Property Name="Next_date" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="varchar(max)" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Recuring_Invoice_De">
+    <Key>
+      <PropertyRef Name="Recuring_Invoice_DeID" />
+    </Key>
+    <Property Name="Recuring_Invoice_DeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Pro_name" Type="varchar" MaxLength="255" />
+    <Property Name="Order_name" Type="varchar" MaxLength="255" />
+    <Property Name="Rept_evry" Type="varchar(max)" />
+    <Property Name="Start_d" Type="varchar" MaxLength="255" />
+    <Property Name="End_d" Type="varchar" MaxLength="255" />
+    <Property Name="Pay_term" Type="varchar(max)" />
+    <Property Name="Items" Type="varchar(max)" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Sub_total" Type="varchar" MaxLength="100" />
+    <Property Name="Dis" Type="varchar" MaxLength="100" />
+    <Property Name="Adj" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Retainer_Invoice">
+    <Key>
+      <PropertyRef Name="Retainer_InvoiceID" />
+    </Key>
+    <Property Name="Retainer_InvoiceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Date" Type="varchar" MaxLength="255" />
+    <Property Name="Desp" Type="varchar(max)" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Invoice_no" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Retainer_Invoice_De">
+    <Key>
+      <PropertyRef Name="Retainer_Invoice_DeID" />
+    </Key>
+    <Property Name="Retainer_Invoice_DeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Date_d" Type="varchar" MaxLength="255" />
+    <Property Name="Desc" Type="varchar(max)" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Sub_total" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Sales_orders">
+    <Key>
+      <PropertyRef Name="Sales_ordersID" />
+    </Key>
+    <Property Name="Sales_ordersID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date_s" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Del_date" Type="varchar" MaxLength="255" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Paid" Type="varchar" MaxLength="100" />
+    <Property Name="Balance" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Sales_orders_De">
+    <Key>
+      <PropertyRef Name="Sales_orders_DeID" />
+    </Key>
+    <Property Name="Sales_orders_DeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date_s" Type="varchar" MaxLength="255" />
+    <Property Name="Cust_name" Type="varchar" MaxLength="255" />
+    <Property Name="Ref" Type="varchar" MaxLength="255" />
+    <Property Name="Del_date" Type="varchar" MaxLength="255" />
+    <Property Name="Amt" Type="varchar" MaxLength="100" />
+    <Property Name="Items" Type="varchar" MaxLength="255" />
+    <Property Name="Qty" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="Sub_total" Type="varchar" MaxLength="255" />
+    <Property Name="Dis" Type="varchar" MaxLength="100" />
+    <Property Name="Adj" Type="varchar" MaxLength="100" />
+    <Property Name="Total" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="service">
+    <Key>
+      <PropertyRef Name="servicesID" />
+    </Key>
+    <Property Name="servicesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Ser_name" Type="varchar" MaxLength="255" />
+    <Property Name="Unit" Type="varchar" MaxLength="15" />
+    <Property Name="Rate" Type="varchar" MaxLength="100" />
+    <Property Name="GST" Type="varchar" MaxLength="15" />
+    <Property Name="Desc" Type="varchar(max)" />
+    <Property Name="final" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Trasaction">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="TransactionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="varchar" MaxLength="255" />
+    <Property Name="Party" Type="varchar" MaxLength="255" />
+    <Property Name="Amount" Type="varchar" MaxLength="100" />
+    <Property Name="Current" Type="varchar" MaxLength="100" />
+    <Property Name="Pay_mode" Type="varchar" MaxLength="255" />
+    <Property Name="Descp" Type="varchar(max)" />
+    <Property Name="Purpose" Type="varchar(max)" />
+    <Property Name="Acc_id" Type="varchar" MaxLength="50" />
+    <Property Name="Date_t" Type="date" />
+  </EntityType>
+  <EntityType Name="vendor">
+    <Key>
+      <PropertyRef Name="vendorID" />
+    </Key>
+    <Property Name="vendorID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Salut" Type="varchar" MaxLength="255" />
+    <Property Name="First_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Last_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Email" Type="varchar" MaxLength="255" />
+    <Property Name="Mob1" Type="varchar" MaxLength="100" />
+    <Property Name="Mob2" Type="varchar" MaxLength="100" />
+    <Property Name="Web" Type="varchar" MaxLength="255" />
+    <Property Name="Add" Type="varchar" MaxLength="255" />
+    <Property Name="Shop_name" Type="varchar" MaxLength="255" />
+    <Property Name="Bank_name" Type="varchar" MaxLength="255" />
+    <Property Name="Acc_name" Type="varchar" MaxLength="255" />
+    <Property Name="Acc_no" Type="varchar" MaxLength="11" />
+    <Property Name="Ifsc" Type="varchar" MaxLength="13" />
+    <Property Name="Branch_add" Type="varchar" MaxLength="255" />
+    <Property Name="Acc_type" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <Function Name="getLogData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="est" Type="int" Mode="In" />
+  </Function>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'GST.dbo.Worksheet$' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Worksheet$">
+        <Property Name="First_Name" Type="nvarchar" MaxLength="255" />
+        <Property Name="Last_Name" Type="nvarchar" MaxLength="255" />
+        <Property Name="Email" Type="nvarchar" MaxLength="255" />
+        <Property Name="Mobile1" Type="nvarchar" MaxLength="255" />
+        <Property Name="Mobile2" Type="nvarchar" MaxLength="255" />
+        <Property Name="website" Type="nvarchar" MaxLength="255" />
+        <Property Name="adderss" Type="nvarchar" MaxLength="255" />
+        <Property Name="F8" Type="nvarchar" MaxLength="255" />
+      </EntityType>-->
+</Schema>

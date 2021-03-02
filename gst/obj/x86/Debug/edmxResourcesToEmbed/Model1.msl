@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GSTModelStoreContainer" CdmEntityContainer="GSTEntities">
+    <EntitySetMapping Name="Banks">
+      <EntityTypeMapping TypeName="GSTModel.Bank">
+        <MappingFragment StoreEntitySet="Banks">
+          <ScalarProperty Name="Acc_id" ColumnName="Acc_id" />
+          <ScalarProperty Name="Bank_name" ColumnName="Bank_name" />
+          <ScalarProperty Name="Acc_name" ColumnName="Acc_name" />
+          <ScalarProperty Name="Acc_no" ColumnName="Acc_no" />
+          <ScalarProperty Name="Ifsc" ColumnName="Ifsc" />
+          <ScalarProperty Name="Bra_add" ColumnName="Bra_add" />
+          <ScalarProperty Name="Acc_type" ColumnName="Acc_type" />
+          <ScalarProperty Name="Opening_bal" ColumnName="Opening_bal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bill_detail">
+      <EntityTypeMapping TypeName="GSTModel.bill_detail">
+        <MappingFragment StoreEntitySet="bill_detail">
+          <ScalarProperty Name="BillsID" ColumnName="BillsID" />
+          <ScalarProperty Name="Vendor_name" ColumnName="Vendor_name" />
+          <ScalarProperty Name="Pur_ord" ColumnName="Pur_ord" />
+          <ScalarProperty Name="Bill_date" ColumnName="Bill_date" />
+          <ScalarProperty Name="Due_date" ColumnName="Due_date" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bills">
+      <EntityTypeMapping TypeName="GSTModel.Bill">
+        <MappingFragment StoreEntitySet="Bills">
+          <ScalarProperty Name="BillsID" ColumnName="BillsID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Vendor_name" ColumnName="Vendor_name" />
+          <ScalarProperty Name="Due_date" ColumnName="Due_date" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Bal" ColumnName="Bal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Credit_No">
+      <EntityTypeMapping TypeName="GSTModel.Credit_No">
+        <MappingFragment StoreEntitySet="Credit_No">
+          <ScalarProperty Name="Credit_NoID" ColumnName="Credit_NoID" />
+          <ScalarProperty Name="Date_c" ColumnName="Date_c" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Credit_No_De">
+      <EntityTypeMapping TypeName="GSTModel.Credit_No_De">
+        <MappingFragment StoreEntitySet="Credit_No_De">
+          <ScalarProperty Name="Credit_No_DeID" ColumnName="Credit_No_DeID" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Sub_total" ColumnName="Sub_total" />
+          <ScalarProperty Name="Dis" ColumnName="Dis" />
+          <ScalarProperty Name="Adj" ColumnName="Adj" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="GSTModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="Cust_no" ColumnName="Cust_no" />
+          <ScalarProperty Name="Salut" ColumnName="Salut" />
+          <ScalarProperty Name="First_name" ColumnName="First_name" />
+          <ScalarProperty Name="Last_name" ColumnName="Last_name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mob1" ColumnName="Mob1" />
+          <ScalarProperty Name="Mob2" ColumnName="Mob2" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="Add" ColumnName="Add" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Est_Details">
+      <EntityTypeMapping TypeName="GSTModel.Est_Details">
+        <MappingFragment StoreEntitySet="Est_Details">
+          <ScalarProperty Name="Est_DetailsID" ColumnName="Est_DetailsID" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Expire_date" ColumnName="Expire_date" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Sub_Total" ColumnName="Sub_Total" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Adjustment" ColumnName="Adjustment" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estimates">
+      <EntityTypeMapping TypeName="GSTModel.Estimate">
+        <MappingFragment StoreEntitySet="Estimates">
+          <ScalarProperty Name="EstimatesID" ColumnName="EstimatesID" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="expenses">
+      <EntityTypeMapping TypeName="GSTModel.expens">
+        <MappingFragment StoreEntitySet="expenses">
+          <ScalarProperty Name="expensesID" ColumnName="expensesID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Expense_acc" ColumnName="Expense_acc" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="Paidby" ColumnName="Paidby" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Billno" ColumnName="Billno" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Pay_details" ColumnName="Pay_details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="goods">
+      <EntityTypeMapping TypeName="GSTModel.good">
+        <MappingFragment StoreEntitySet="goods">
+          <ScalarProperty Name="goodsID" ColumnName="goodsID" />
+          <ScalarProperty Name="Prod_name" ColumnName="Prod_name" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Purchasep" ColumnName="Purchasep" />
+          <ScalarProperty Name="Salesp" ColumnName="Salesp" />
+          <ScalarProperty Name="Stockl" ColumnName="Stockl" />
+          <ScalarProperty Name="GST" ColumnName="GST" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="Ad_refno" ColumnName="Ad_refno" />
+          <ScalarProperty Name="Ad_date" ColumnName="Ad_date" />
+          <ScalarProperty Name="Ad_qty" ColumnName="Ad_qty" />
+          <ScalarProperty Name="Ad_reason" ColumnName="Ad_reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="GSTModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="I_date" ColumnName="I_date" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="So_no" ColumnName="So_no" />
+          <ScalarProperty Name="Satus" ColumnName="Satus" />
+          <ScalarProperty Name="Due_date" ColumnName="Due_date" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Bal_due" ColumnName="Bal_due" />
+          <ScalarProperty Name="Ret_inovice" ColumnName="Ret_inovice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoice_Dei">
+      <EntityTypeMapping TypeName="GSTModel.Invoice_Dei">
+        <MappingFragment StoreEntitySet="Invoice_Dei">
+          <ScalarProperty Name="Invoice_DeiID" ColumnName="Invoice_DeiID" />
+          <ScalarProperty Name="I_date" ColumnName="I_date" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="So_no" ColumnName="So_no" />
+          <ScalarProperty Name="Due_date" ColumnName="Due_date" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Sub_total" ColumnName="Sub_total" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="Adj" ColumnName="Adj" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment_made">
+      <EntityTypeMapping TypeName="GSTModel.Payment_made">
+        <MappingFragment StoreEntitySet="Payment_made">
+          <ScalarProperty Name="Payment_madeID" ColumnName="Payment_madeID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Vendor_name" ColumnName="Vendor_name" />
+          <ScalarProperty Name="Bill_no" ColumnName="Bill_no" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment_recive">
+      <EntityTypeMapping TypeName="GSTModel.Payment_recive">
+        <MappingFragment StoreEntitySet="Payment_recive">
+          <ScalarProperty Name="Payment_reciveID" ColumnName="Payment_reciveID" />
+          <ScalarProperty Name="Date_p" ColumnName="Date_p" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pur_detail">
+      <EntityTypeMapping TypeName="GSTModel.pur_detail">
+        <MappingFragment StoreEntitySet="pur_detail">
+          <ScalarProperty Name="purchase_orderID" ColumnName="purchase_orderID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Vendor_name" ColumnName="Vendor_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Del_date" ColumnName="Del_date" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase_order">
+      <EntityTypeMapping TypeName="GSTModel.purchase_order">
+        <MappingFragment StoreEntitySet="purchase_order">
+          <ScalarProperty Name="purchase_orderID" ColumnName="purchase_orderID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Vendor_name" ColumnName="Vendor_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Del_date" ColumnName="Del_date" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Bal" ColumnName="Bal" />
+          <ScalarProperty Name="Pay_detail" ColumnName="Pay_detail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reccuring_exp">
+      <EntityTypeMapping TypeName="GSTModel.reccuring_exp">
+        <MappingFragment StoreEntitySet="reccuring_exp">
+          <ScalarProperty Name="reccuring_expID" ColumnName="reccuring_expID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Expense_acc" ColumnName="Expense_acc" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="Paidby" ColumnName="Paidby" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Billno" ColumnName="Billno" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Prof_name" ColumnName="Prof_name" />
+          <ScalarProperty Name="Repeat" ColumnName="Repeat" />
+          <ScalarProperty Name="Start_date" ColumnName="Start_date" />
+          <ScalarProperty Name="End_date" ColumnName="End_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recuring_Invoice">
+      <EntityTypeMapping TypeName="GSTModel.Recuring_Invoice">
+        <MappingFragment StoreEntitySet="Recuring_Invoice">
+          <ScalarProperty Name="Recuring_InvoiceID" ColumnName="Recuring_InvoiceID" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Pro_name" ColumnName="Pro_name" />
+          <ScalarProperty Name="Freq" ColumnName="Freq" />
+          <ScalarProperty Name="Last_date" ColumnName="Last_date" />
+          <ScalarProperty Name="Next_date" ColumnName="Next_date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recuring_Invoice_De">
+      <EntityTypeMapping TypeName="GSTModel.Recuring_Invoice_De">
+        <MappingFragment StoreEntitySet="Recuring_Invoice_De">
+          <ScalarProperty Name="Recuring_Invoice_DeID" ColumnName="Recuring_Invoice_DeID" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Pro_name" ColumnName="Pro_name" />
+          <ScalarProperty Name="Order_name" ColumnName="Order_name" />
+          <ScalarProperty Name="Rept_evry" ColumnName="Rept_evry" />
+          <ScalarProperty Name="Start_d" ColumnName="Start_d" />
+          <ScalarProperty Name="End_d" ColumnName="End_d" />
+          <ScalarProperty Name="Pay_term" ColumnName="Pay_term" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Sub_total" ColumnName="Sub_total" />
+          <ScalarProperty Name="Dis" ColumnName="Dis" />
+          <ScalarProperty Name="Adj" ColumnName="Adj" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retainer_Invoice">
+      <EntityTypeMapping TypeName="GSTModel.Retainer_Invoice">
+        <MappingFragment StoreEntitySet="Retainer_Invoice">
+          <ScalarProperty Name="Retainer_InvoiceID" ColumnName="Retainer_InvoiceID" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Desp" ColumnName="Desp" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Invoice_no" ColumnName="Invoice_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retainer_Invoice_De">
+      <EntityTypeMapping TypeName="GSTModel.Retainer_Invoice_De">
+        <MappingFragment StoreEntitySet="Retainer_Invoice_De">
+          <ScalarProperty Name="Retainer_Invoice_DeID" ColumnName="Retainer_Invoice_DeID" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Date_d" ColumnName="Date_d" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Sub_total" ColumnName="Sub_total" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales_orders">
+      <EntityTypeMapping TypeName="GSTModel.Sales_orders">
+        <MappingFragment StoreEntitySet="Sales_orders">
+          <ScalarProperty Name="Sales_ordersID" ColumnName="Sales_ordersID" />
+          <ScalarProperty Name="Date_s" ColumnName="Date_s" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Del_date" ColumnName="Del_date" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales_orders_De">
+      <EntityTypeMapping TypeName="GSTModel.Sales_orders_De">
+        <MappingFragment StoreEntitySet="Sales_orders_De">
+          <ScalarProperty Name="Sales_orders_DeID" ColumnName="Sales_orders_DeID" />
+          <ScalarProperty Name="Date_s" ColumnName="Date_s" />
+          <ScalarProperty Name="Cust_name" ColumnName="Cust_name" />
+          <ScalarProperty Name="Ref" ColumnName="Ref" />
+          <ScalarProperty Name="Del_date" ColumnName="Del_date" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Sub_total" ColumnName="Sub_total" />
+          <ScalarProperty Name="Dis" ColumnName="Dis" />
+          <ScalarProperty Name="Adj" ColumnName="Adj" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="services">
+      <EntityTypeMapping TypeName="GSTModel.service">
+        <MappingFragment StoreEntitySet="service">
+          <ScalarProperty Name="servicesID" ColumnName="servicesID" />
+          <ScalarProperty Name="Ser_name" ColumnName="Ser_name" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="GST" ColumnName="GST" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="final" ColumnName="final" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trasactions">
+      <EntityTypeMapping TypeName="GSTModel.Trasaction">
+        <MappingFragment StoreEntitySet="Trasaction">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Current" ColumnName="Current" />
+          <ScalarProperty Name="Pay_mode" ColumnName="Pay_mode" />
+          <ScalarProperty Name="Descp" ColumnName="Descp" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="Acc_id" ColumnName="Acc_id" />
+          <ScalarProperty Name="Date_t" ColumnName="Date_t" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vendors">
+      <EntityTypeMapping TypeName="GSTModel.vendor">
+        <MappingFragment StoreEntitySet="vendor">
+          <ScalarProperty Name="vendorID" ColumnName="vendorID" />
+          <ScalarProperty Name="Salut" ColumnName="Salut" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mob1" ColumnName="Mob1" />
+          <ScalarProperty Name="Mob2" ColumnName="Mob2" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="Add" ColumnName="Add" />
+          <ScalarProperty Name="Shop_name" ColumnName="Shop_name" />
+          <ScalarProperty Name="Bank_name" ColumnName="Bank_name" />
+          <ScalarProperty Name="Acc_name" ColumnName="Acc_name" />
+          <ScalarProperty Name="Acc_no" ColumnName="Acc_no" />
+          <ScalarProperty Name="Ifsc" ColumnName="Ifsc" />
+          <ScalarProperty Name="Branch_add" ColumnName="Branch_add" />
+          <ScalarProperty Name="Acc_type" ColumnName="Acc_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
