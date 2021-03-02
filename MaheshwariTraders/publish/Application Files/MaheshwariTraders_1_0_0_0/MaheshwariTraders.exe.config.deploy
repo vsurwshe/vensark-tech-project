@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuration>
+<configSections>
+</configSections>
+<connectionStrings>
+    <add name="MaheshwariTraders.Properties.Settings.MTConnection" connectionString="Data Source=ADMIN-PC\SQLEXPRESS;Initial Catalog=MaheshwariTraders;Integrated Security=True" providerName="System.Data.SqlClient"/>
+</connectionStrings>
+<startup useLegacyV2RuntimeActivationPolicy="true"><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>

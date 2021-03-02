@@ -1,2 +1,0 @@
-C:\Users\Vishva\Documents\Visual Studio 2010\Projects\lahotiSDF\gst\bin\Release\gst.exe.config
-C:\Users\Vishva\Documents\Visual Studio 2010\Projects\lahotiSDF\gst\obj\x86\Release\gst2.csproj.ResolveComReference.cache

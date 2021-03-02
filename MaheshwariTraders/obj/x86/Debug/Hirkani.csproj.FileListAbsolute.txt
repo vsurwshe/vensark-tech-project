@@ -1,0 +1,235 @@
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+I:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+I:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+I:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.dll
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Add_Customer.resources
+O:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+O:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+O:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Home_MDI.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.dll
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing_Entry.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Add_Customer.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Get_Product.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Home_MDI.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+G:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing_Entry.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Get_Product.resources
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.dll
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\Hirkani.csprojResolveAssemblyReference.cache
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing_Entry.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Add_Customer.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Get_Product.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Home_MDI.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\Hirkani.csproj.GenerateResource.Cache
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+H:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.dll
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\Hirkani.csprojResolveAssemblyReference.cache
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing_Entry.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Add_Customer.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Get_Product.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Home_MDI.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\Hirkani.csproj.GenerateResource.Cache
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Master.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmPurchase.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdvance.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmStock.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Germination.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Frmbalance.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmDailyuse.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmReports.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptCustomer.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptStock.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptVarietywise.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptAdvanceBook.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptDailyshowing.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptDate.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptLotNo.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptplantVariety.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptRowMaterial.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmDashBoard.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdvance1.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmGet_Product.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdd_Product.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptRemaining.resources
+C:\Users\intel\Desktop\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptAdvBill.resources
+D:\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+D:\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+D:\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+D:\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+D:\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+D:\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+D:\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.dll
+D:\Hirkani\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\Hirkani.csprojResolveAssemblyReference.cache
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing_Entry.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Add_Customer.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdd_Product.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdvance.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdvance1.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmDashBoard.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmGet_Product.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptAdvanceBook.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Frmbalance.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptAdvBill.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptDailyshowing.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmDailyuse.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptDate.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptLotNo.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptplantVariety.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmPurchase.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmReports.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptRemaining.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptRowMaterial.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptCustomer.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptStock.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptVarietywise.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmStock.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Germination.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Get_Product.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Home_MDI.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Master.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\Hirkani.csproj.GenerateResource.Cache
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+D:\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmMasterShop.resources
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MetroFramework.dll
+D:\Hirkani\Original\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing_Entry.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Add_Customer.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Daily_Sowing.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdd_Product.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdvance.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmAdvance1.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmDashBoard.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmGet_Product.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmMasterShop.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptAdvanceBook.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Frmbalance.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptAdvBill.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptDailyshowing.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmDailyuse.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptDate.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptLotNo.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptplantVariety.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmPurchase.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmReports.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptRemaining.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptRowMaterial.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptCustomer.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptStock.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmRptVarietywise.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.FrmStock.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Germination.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Get_Product.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Home_MDI.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Master.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\Hirkani.csproj.GenerateResource.Cache
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+D:\Hirkani\Original\MaheshwariTraders\obj\x86\Debug\Hirkani.csprojResolveAssemblyReference.cache

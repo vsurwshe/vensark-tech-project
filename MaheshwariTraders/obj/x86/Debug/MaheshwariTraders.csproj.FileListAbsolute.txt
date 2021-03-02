@@ -1,0 +1,106 @@
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+C:\Users\admin\documents\visual studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+C:\Users\admin\documents\visual studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+C:\Users\admin\documents\visual studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+C:\Users\admin\documents\visual studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\Visual Studio 2010\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.dll
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csprojResolveAssemblyReference.cache
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csproj.GenerateResource.Cache
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+H:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.dll
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csprojResolveAssemblyReference.cache
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csproj.GenerateResource.Cache
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+G:\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.dll
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csprojResolveAssemblyReference.cache
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.csproj.GenerateResource.Cache
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+E:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.manifest
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.application
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MaheshwariTraders.pdb
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Design.dll
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.dll
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\bin\Debug\MetroFramework.Fonts.dll
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Bill_Print.resources
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Form1.resources
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.HomePage.resources
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Properties.Resources.resources
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales.resources
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Sales_Bill.resources
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.Stock_Status.resources
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe.manifest
+I:\All Data\BCK 7-12-2016\Projects\MaheshwariTraders\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.application
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\bin\Debug\MaheshwariTraders.exe.config
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.exe
+E:\All Data\BCK 7-12-2016\Projects\Hirkani\MaheshwariTraders\obj\x86\Debug\MaheshwariTraders.pdb

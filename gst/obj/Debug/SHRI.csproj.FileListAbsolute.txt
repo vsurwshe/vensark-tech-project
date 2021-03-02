@@ -1,6 +1,0 @@
-D:\SHRI ENTERPIRZES V0.3\gst\bin\Debug\SHRI LAXMI.exe.config
-D:\SHRI ENTERPIRZES V0.3\gst\obj\Debug\SHRI.csproj.ResolveComReference.cache
-C:\Users\Vishva\Documents\Visual Studio 2010\Projects\SHRI ENTERPIRZES V0.4\gst\bin\Debug\SHRI LAXMI.exe.config
-C:\Users\Vishva\Documents\Visual Studio 2010\Projects\SHRI ENTERPIRZES V0.4\gst\obj\Debug\SHRI.csproj.ResolveComReference.cache
-D:\SHRI ENTERPIRZES Final\gst\bin\Debug\SHRI LAXMI.exe.config
-D:\SHRI ENTERPIRZES Final\gst\obj\Debug\SHRI.csproj.ResolveComReference.cache
