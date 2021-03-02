@@ -52,7 +52,6 @@ namespace gst
             reload();
             panel1.Visible = false;
         }
-        public String name2;
         public String sno;
         public void save1()
         {
@@ -72,9 +71,6 @@ namespace gst
                     SqlCeCommand cmd3 = new SqlCeCommand(q2, conn);
                     cmd3.ExecuteNonQuery();
                 }
-                name2 = salution.Text;
-                sno = Convert.ToString(dataGridView1.RowCount);
-
                 string s = "Retainer Invoice Order Pay";
                 Int32 so1 = dataGridView1.RowCount;
                 cmd.Connection = conn;
@@ -107,6 +103,7 @@ namespace gst
                             if (pay.Equals(""))
                                 pay = "0";
                             Double pa = Convert.ToDouble(pay);
+                            
                             Double pan1 = Convert.ToDouble(textBox8.Text);
                             String NewBalDue = Convert.ToString(pa-pan1);
                             //Double olPaid = Convert.ToDouble(paid);
@@ -127,7 +124,7 @@ namespace gst
               }
 
 
-               
+                sno = dataGridView1.RowCount.ToString();
                 conn.Close();
                 MessageBox.Show("Inserted Data Successfully");
                 conn.Close();
@@ -260,13 +257,11 @@ namespace gst
             r.ShowDialog();
 
         }
-        public static string nam;
-        public static string number;
+
         private void button1_Click(object sender, EventArgs e)
         {
             save1();
-            number = sno;
-            nam = name2;
+            Payments.com = sno;
             RCF rf = new RCF();
             rf.ShowDialog();
         }

@@ -128,7 +128,7 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="log4net" version="1.2.10.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="amd64" />
+      <assemblyIdentity name="log4net" version="1.2.10.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="x86" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -147,14 +147,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gst.exe" size="3399680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gst.exe" size="3280384">
       <assemblyIdentity name="gst" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>T50+R8aVYxzyfaeTgmgrzAi+ARc=</dsig:DigestValue>
+        <dsig:DigestValue>xhl/zvDvQCyHuKFyVE5o8Z+cYfc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.dll" size="353280">
+      <assemblyIdentity name="MetroFramework" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>0KqAOKkutD3vL/+79BFLAmNhF8U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -167,13 +179,13 @@
       <dsig:DigestValue>RwdIQZEZlgVNSfxI89lX41uEH0M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GST.sdf" size="610304" writeableType="applicationData">
+  <file name="GST.sdf" size="544768" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>FE4OUeqEU9pg1CNPvUR0DFQrODo=</dsig:DigestValue>
+      <dsig:DigestValue>sb3GPjnH5W/3B1BCqSGzp922Z4w=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\if_business-work_12_2377635.ico" size="370070">

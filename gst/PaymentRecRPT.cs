@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DGVPrinterHelper;
+using System.Data.SqlServerCe;
 
 namespace gst
 {
@@ -64,9 +65,10 @@ namespace gst
             if (saveFileDialoge.ShowDialog() == DialogResult.OK)
             {
                 workbook.SaveAs(saveFileDialoge.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+                MessageBox.Show("Excel Report Saved ");
             }
             app.Quit();
-            MessageBox.Show("Excel Report Saved ");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -84,5 +86,90 @@ namespace gst
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dataGridView1);
         }
+       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCeConnection conn = new SqlCeConnection(Properties.Settings.Default.conne);
+            conn.Open();
+            SqlCeCommand cmd2 = new SqlCeCommand();
+            // MessageBox.Show(dateTimePicker1.Value.ToString());
+            // MessageBox.Show(dateTimePicker2.Value.ToString());
+            string query = "SELECT * FROM Payment_recive where Date_p BETWEEN '" + dateTimePicker1.Value.ToString() + " 'AND '" + dateTimePicker2.Value.ToString() + "'";
+            using (SqlCeDataAdapter adapter = new SqlCeDataAdapter(query, conn))
+            {
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dataGridView1.DataSource = ds.Tables[0];
+            }
+            Double sum = 0;
+                      for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+            {
+
+                sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value);
+                   }
+            textBox2.Text = Convert.ToString(sum);
+                      conn.Close();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            SqlCeConnection con = new SqlCeConnection(Properties.Settings.Default.conne);
+            
+            SqlCeCommand cmd3 = new SqlCeCommand();
+            if (e.KeyChar == (char)13 && textBox1.Text != null)
+            {
+                try
+                {
+                    con.Open();
+                    string query = "SELECT  * FROM [Payment_recive] where [" + comboBox6.Text + "] LIKE '%" + textBox1.Text + "%'";
+                    using (SqlCeDataAdapter adapter = new SqlCeDataAdapter(query, con))
+                    {
+                        DataSet ds1 = new DataSet();
+                        adapter.Fill(ds1);
+                        dataGridView1.DataSource = ds1.Tables[0];
+                    }
+                    Double sum = 0;
+                    
+                    for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+                    {
+
+                        sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value);
+                       
+                    }
+                    textBox2.Text = Convert.ToString(sum);
+                    con.Close();
+                    textBox1.Text = "";
+                }
+                catch (Exception o)
+                {
+                    MessageBox.Show("Please Choose Your Column Form Combo Box");
+                }
+            }
+            else
+            {
+                con.Open();
+                string query = "SELECT  * FROM [Payment_recive]";
+                using (SqlCeDataAdapter adapter = new SqlCeDataAdapter(query, con))
+                {
+                    DataSet ds1 = new DataSet();
+                    adapter.Fill(ds1);
+                    dataGridView1.DataSource = ds1.Tables[0];
+                }
+                Double sum = 0;
+               
+                for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+                {
+
+                    sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value);
+                  
+                }
+                textBox2.Text = Convert.ToString(sum);
+                
+                con.Close();
+            }
+        }
+
+        
     }
 }

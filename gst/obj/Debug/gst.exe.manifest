@@ -147,14 +147,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gst.exe" size="3509248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gst.exe" size="3501056">
       <assemblyIdentity name="gst" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>iRlob+lmh9/ZeY3TNtEpIPWtEyo=</dsig:DigestValue>
+        <dsig:DigestValue>g3Kg8h1s87p6LzkU2SGF0965Pcc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -173,7 +173,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>FE4OUeqEU9pg1CNPvUR0DFQrODo=</dsig:DigestValue>
+      <dsig:DigestValue>QSqFHCmHB4CHSKBLHPOebaad1Qc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\if_business-work_12_2377635.ico" size="370070">

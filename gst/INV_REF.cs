@@ -21,8 +21,8 @@ namespace gst
 
         private void INV_REF_Load(object sender, EventArgs e)
         {
-           try {
-                String no = "#REN-" + Payments.com;
+           7try {
+                String no = "#LAX-" + Payments.com;
                 String nam = Invoice.nam;
                 MessageBox.Show("Inoice No:-"+no+"\n Name:-"+nam);
                 String q1 = "SELECT * from Invoice_Dei where So_no='" + no + "'";

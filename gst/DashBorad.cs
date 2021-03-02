@@ -28,8 +28,8 @@ namespace gst
 
         private void DashBorad_Load(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 SqlCeConnection conn = new SqlCeConnection(Properties.Settings.Default.conne);
                 conn.Open();
                 SqlCeDataAdapter da = new SqlCeDataAdapter("SELECT [Sales_ordersID] AS ID ,[Date_s] AS DATE,[Cust_name] AS NAME ,[Balance] AS BALANCE,[Del_date] AS DUE_DATE FROM Sales_orders where [Balance]>'1'", conn);
@@ -81,12 +81,12 @@ namespace gst
                 da42.Fill(dt52);
                 dataGridView1.DataSource = dt52;
                 conn.Close();
-               
-            //}
-            //catch (Exception o)
-            //{
-            //    MessageBox.Show("Erorr " + o);
-            //}
+
+            }
+            catch (Exception o)
+            {
+                MessageBox.Show("Erorr " + o);
+            }
         }
 
         private void restore_Click(object sender, EventArgs e)
@@ -112,9 +112,9 @@ namespace gst
                     {
                         MessageBox.Show(ex.Message);
                     }
-                }
-              
             
+                }
+                
             }
             catch (Exception o) {
                 MessageBox.Show("Error: "+o);
@@ -139,7 +139,7 @@ namespace gst
                     System.IO.File.Copy(sourceFile, destFile);
                     MessageBox.Show("Your Backup Has been Taken Successfully ");
                 }
-               
+                
             }
             catch (Exception o) {
                 MessageBox.Show("Error: "+o);

@@ -26,10 +26,11 @@ namespace gst
             for (int i = 0; i < dataGridView1.Rows.Count; ++i)
             {
 
-                sum += (Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[i].Cells[4].Value));
-
+                sum += (Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value)*Convert.ToDouble(dataGridView1.Rows[i].Cells[4].Value));
+               
             }
             textBox3.Text = Convert.ToString(sum);
+            
         }
 
         private void Add_Click(object sender, EventArgs e)
@@ -76,7 +77,7 @@ namespace gst
             printer.PageNumberInHeader = false;
             printer.PrintColumnHeaders = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Renuka Cometics Stock Report";
+            printer.Footer = "Shri Laxmi Enterprises Stock Report";
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dataGridView1);
         }

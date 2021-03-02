@@ -57,6 +57,7 @@ namespace gst
                 reload();
         }
         public static String com; 
+
         private void dataGridView1_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             com = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
@@ -70,7 +71,7 @@ namespace gst
                 if (count == strArr.Length - 1)
                     tem = strArr[count];
 
-                //MessageBox.Show(strArr[count]);
+               // MessageBox.Show(strArr[count]);
             }
            // MessageBox.Show("Your Var"+tem);
             if (com.Equals("#RET-INV-"+tem))
@@ -88,7 +89,7 @@ namespace gst
                     s.Show();
                 }
                 else {
-                    if (com.Equals("#REN-" + tem))
+                    if (com.Equals("#LAX-" + tem))
                     {
                         com = tem;
                         Invoice.nam = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();

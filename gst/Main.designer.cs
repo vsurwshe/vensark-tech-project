@@ -134,10 +134,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(234, 714);
+            this.statusStrip1.Location = new System.Drawing.Point(225, 706);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.statusStrip1.Size = new System.Drawing.Size(1050, 27);
+            this.statusStrip1.Size = new System.Drawing.Size(1059, 27);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -184,20 +184,20 @@
             this.menuStrip.MinimumSize = new System.Drawing.Size(220, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip.Size = new System.Drawing.Size(234, 741);
+            this.menuStrip.Size = new System.Drawing.Size(225, 733);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.TabStop = true;
             this.menuStrip.Text = "MenuStrip";
             // 
             // toolStripMenuItem3
             // 
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.toolStripMenuItem3.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.toolStripMenuItem3.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(10, 11, 50, 7);
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(227, 46);
-            this.toolStripMenuItem3.Text = "Renuka Cometics";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(218, 46);
+            this.toolStripMenuItem3.Text = " Shri Laxmi";
             // 
             // fileMenu
             // 
@@ -207,7 +207,7 @@
             this.fileMenu.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.fileMenu.Name = "fileMenu";
             this.fileMenu.Padding = new System.Windows.Forms.Padding(10, 11, 50, 10);
-            this.fileMenu.Size = new System.Drawing.Size(227, 80);
+            this.fileMenu.Size = new System.Drawing.Size(218, 80);
             this.fileMenu.Text = "DashBoard";
             this.fileMenu.Click += new System.EventHandler(this.fileMenu_Click);
             // 
@@ -220,7 +220,7 @@
             this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(10, 11, 50, 10);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(227, 80);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(218, 80);
             this.toolStripMenuItem1.Text = "Contacts";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -231,7 +231,7 @@
             this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(10, 11, 50, 10);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(227, 80);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(218, 80);
             this.toolStripMenuItem2.Text = "Items";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -242,7 +242,7 @@
             this.Banking.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Banking.Name = "Banking";
             this.Banking.Padding = new System.Windows.Forms.Padding(10, 11, 50, 10);
-            this.Banking.Size = new System.Drawing.Size(227, 80);
+            this.Banking.Size = new System.Drawing.Size(218, 80);
             this.Banking.Text = "Banking";
             this.Banking.Click += new System.EventHandler(this.Banking_Click);
             // 
@@ -264,7 +264,7 @@
             this.editMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.editMenu.Name = "editMenu";
             this.editMenu.Padding = new System.Windows.Forms.Padding(10, 11, 50, 10);
-            this.editMenu.Size = new System.Drawing.Size(227, 80);
+            this.editMenu.Size = new System.Drawing.Size(218, 80);
             this.editMenu.Text = "Sales";
             // 
             // undoToolStripMenuItem
@@ -361,7 +361,7 @@
             this.viewMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewMenu.Name = "viewMenu";
             this.viewMenu.Padding = new System.Windows.Forms.Padding(10, 11, 50, 10);
-            this.viewMenu.Size = new System.Drawing.Size(227, 80);
+            this.viewMenu.Size = new System.Drawing.Size(218, 80);
             this.viewMenu.Text = "Purchases";
             this.viewMenu.Click += new System.EventHandler(this.viewMenu_Click);
             // 
@@ -446,7 +446,7 @@
             this.Reports.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Reports.Name = "Reports";
             this.Reports.Padding = new System.Windows.Forms.Padding(10, 11, 50, 10);
-            this.Reports.Size = new System.Drawing.Size(227, 80);
+            this.Reports.Size = new System.Drawing.Size(218, 80);
             this.Reports.Text = "Reports";
             // 
             // salesReportToolStripMenuItem
@@ -518,14 +518,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1284, 741);
+            this.ClientSize = new System.Drawing.Size(1284, 733);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
+            this.Text = "VENSARK BILLING";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
             this.statusStrip1.ResumeLayout(false);

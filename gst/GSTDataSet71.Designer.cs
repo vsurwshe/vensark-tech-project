@@ -24,7 +24,7 @@ namespace gst {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class GSTDataSet7 : global::System.Data.DataSet {
         
-        private BillsDataTable tableBills;
+        private TrasactionDataTable tableTrasaction;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace gst {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Bills"] != null)) {
-                    base.Tables.Add(new BillsDataTable(ds.Tables["Bills"]));
+                if ((ds.Tables["Trasaction"] != null)) {
+                    base.Tables.Add(new TrasactionDataTable(ds.Tables["Trasaction"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace gst {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public BillsDataTable Bills {
+        public TrasactionDataTable Trasaction {
             get {
-                return this.tableBills;
+                return this.tableTrasaction;
             }
         }
         
@@ -152,8 +152,8 @@ namespace gst {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Bills"] != null)) {
-                    base.Tables.Add(new BillsDataTable(ds.Tables["Bills"]));
+                if ((ds.Tables["Trasaction"] != null)) {
+                    base.Tables.Add(new TrasactionDataTable(ds.Tables["Trasaction"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace gst {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableBills = ((BillsDataTable)(base.Tables["Bills"]));
+            this.tableTrasaction = ((TrasactionDataTable)(base.Tables["Trasaction"]));
             if ((initTable == true)) {
-                if ((this.tableBills != null)) {
-                    this.tableBills.InitVars();
+                if ((this.tableTrasaction != null)) {
+                    this.tableTrasaction.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace gst {
             this.Namespace = "http://tempuri.org/GSTDataSet71.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableBills = new BillsDataTable();
-            base.Tables.Add(this.tableBills);
+            this.tableTrasaction = new TrasactionDataTable();
+            base.Tables.Add(this.tableTrasaction);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeBills() {
+        private bool ShouldSerializeTrasaction() {
             return false;
         }
         
@@ -270,33 +270,23 @@ namespace gst {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void BillsRowChangeEventHandler(object sender, BillsRowChangeEvent e);
+        public delegate void TrasactionRowChangeEventHandler(object sender, TrasactionRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class BillsDataTable : global::System.Data.TypedTableBase<BillsRow> {
+        public partial class TrasactionDataTable : global::System.Data.TypedTableBase<TrasactionRow> {
             
-            private global::System.Data.DataColumn columnBillsID;
+            private global::System.Data.DataColumn columnAcc_id;
             
-            private global::System.Data.DataColumn columnDate;
-            
-            private global::System.Data.DataColumn columnVendor_name;
-            
-            private global::System.Data.DataColumn columnDue_date;
-            
-            private global::System.Data.DataColumn columnAmt;
-            
-            private global::System.Data.DataColumn columnPaid;
-            
-            private global::System.Data.DataColumn columnBal;
+            private global::System.Data.DataColumn columnCure;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BillsDataTable() {
-                this.TableName = "Bills";
+            public TrasactionDataTable() {
+                this.TableName = "Trasaction";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -304,7 +294,7 @@ namespace gst {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal BillsDataTable(global::System.Data.DataTable table) {
+            internal TrasactionDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -321,64 +311,24 @@ namespace gst {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected BillsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected TrasactionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn BillsIDColumn {
+            public global::System.Data.DataColumn Acc_idColumn {
                 get {
-                    return this.columnBillsID;
+                    return this.columnAcc_id;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn DateColumn {
+            public global::System.Data.DataColumn CureColumn {
                 get {
-                    return this.columnDate;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Vendor_nameColumn {
-                get {
-                    return this.columnVendor_name;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Due_dateColumn {
-                get {
-                    return this.columnDue_date;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn AmtColumn {
-                get {
-                    return this.columnAmt;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn PaidColumn {
-                get {
-                    return this.columnPaid;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn BalColumn {
-                get {
-                    return this.columnBal;
+                    return this.columnCure;
                 }
             }
             
@@ -393,58 +343,46 @@ namespace gst {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BillsRow this[int index] {
+            public TrasactionRow this[int index] {
                 get {
-                    return ((BillsRow)(this.Rows[index]));
+                    return ((TrasactionRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event BillsRowChangeEventHandler BillsRowChanging;
+            public event TrasactionRowChangeEventHandler TrasactionRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event BillsRowChangeEventHandler BillsRowChanged;
+            public event TrasactionRowChangeEventHandler TrasactionRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event BillsRowChangeEventHandler BillsRowDeleting;
+            public event TrasactionRowChangeEventHandler TrasactionRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event BillsRowChangeEventHandler BillsRowDeleted;
+            public event TrasactionRowChangeEventHandler TrasactionRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddBillsRow(BillsRow row) {
+            public void AddTrasactionRow(TrasactionRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BillsRow AddBillsRow(string Date, string Vendor_name, string Due_date, string Amt, string Paid, string Bal) {
-                BillsRow rowBillsRow = ((BillsRow)(this.NewRow()));
+            public TrasactionRow AddTrasactionRow(string Acc_id, string Cure) {
+                TrasactionRow rowTrasactionRow = ((TrasactionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        Date,
-                        Vendor_name,
-                        Due_date,
-                        Amt,
-                        Paid,
-                        Bal};
-                rowBillsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowBillsRow);
-                return rowBillsRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BillsRow FindByBillsID(int BillsID) {
-                return ((BillsRow)(this.Rows.Find(new object[] {
-                            BillsID})));
+                        Acc_id,
+                        Cure};
+                rowTrasactionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTrasactionRow);
+                return rowTrasactionRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                BillsDataTable cln = ((BillsDataTable)(base.Clone()));
+                TrasactionDataTable cln = ((TrasactionDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -452,78 +390,51 @@ namespace gst {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new BillsDataTable();
+                return new TrasactionDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnBillsID = base.Columns["BillsID"];
-                this.columnDate = base.Columns["Date"];
-                this.columnVendor_name = base.Columns["Vendor_name"];
-                this.columnDue_date = base.Columns["Due_date"];
-                this.columnAmt = base.Columns["Amt"];
-                this.columnPaid = base.Columns["Paid"];
-                this.columnBal = base.Columns["Bal"];
+                this.columnAcc_id = base.Columns["Acc_id"];
+                this.columnCure = base.Columns["Cure"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnBillsID = new global::System.Data.DataColumn("BillsID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBillsID);
-                this.columnDate = new global::System.Data.DataColumn("Date", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDate);
-                this.columnVendor_name = new global::System.Data.DataColumn("Vendor_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVendor_name);
-                this.columnDue_date = new global::System.Data.DataColumn("Due_date", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDue_date);
-                this.columnAmt = new global::System.Data.DataColumn("Amt", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAmt);
-                this.columnPaid = new global::System.Data.DataColumn("Paid", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPaid);
-                this.columnBal = new global::System.Data.DataColumn("Bal", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBal);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnBillsID}, true));
-                this.columnBillsID.AutoIncrement = true;
-                this.columnBillsID.AutoIncrementSeed = -1;
-                this.columnBillsID.AutoIncrementStep = -1;
-                this.columnBillsID.AllowDBNull = false;
-                this.columnBillsID.ReadOnly = true;
-                this.columnBillsID.Unique = true;
-                this.columnDate.MaxLength = 100;
-                this.columnVendor_name.MaxLength = 255;
-                this.columnDue_date.MaxLength = 100;
-                this.columnAmt.MaxLength = 100;
-                this.columnPaid.MaxLength = 100;
-                this.columnBal.MaxLength = 100;
+                this.columnAcc_id = new global::System.Data.DataColumn("Acc_id", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAcc_id);
+                this.columnCure = new global::System.Data.DataColumn("Cure", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCure);
+                this.columnAcc_id.MaxLength = 100;
+                this.columnCure.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BillsRow NewBillsRow() {
-                return ((BillsRow)(this.NewRow()));
+            public TrasactionRow NewTrasactionRow() {
+                return ((TrasactionRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new BillsRow(builder);
+                return new TrasactionRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(BillsRow);
+                return typeof(TrasactionRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.BillsRowChanged != null)) {
-                    this.BillsRowChanged(this, new BillsRowChangeEvent(((BillsRow)(e.Row)), e.Action));
+                if ((this.TrasactionRowChanged != null)) {
+                    this.TrasactionRowChanged(this, new TrasactionRowChangeEvent(((TrasactionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -531,8 +442,8 @@ namespace gst {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.BillsRowChanging != null)) {
-                    this.BillsRowChanging(this, new BillsRowChangeEvent(((BillsRow)(e.Row)), e.Action));
+                if ((this.TrasactionRowChanging != null)) {
+                    this.TrasactionRowChanging(this, new TrasactionRowChangeEvent(((TrasactionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -540,8 +451,8 @@ namespace gst {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.BillsRowDeleted != null)) {
-                    this.BillsRowDeleted(this, new BillsRowChangeEvent(((BillsRow)(e.Row)), e.Action));
+                if ((this.TrasactionRowDeleted != null)) {
+                    this.TrasactionRowDeleted(this, new TrasactionRowChangeEvent(((TrasactionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -549,14 +460,14 @@ namespace gst {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.BillsRowDeleting != null)) {
-                    this.BillsRowDeleting(this, new BillsRowChangeEvent(((BillsRow)(e.Row)), e.Action));
+                if ((this.TrasactionRowDeleting != null)) {
+                    this.TrasactionRowDeleting(this, new TrasactionRowChangeEvent(((TrasactionRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveBillsRow(BillsRow row) {
+            public void RemoveTrasactionRow(TrasactionRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -583,7 +494,7 @@ namespace gst {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "BillsDataTable";
+                attribute2.FixedValue = "TrasactionDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -627,194 +538,71 @@ namespace gst {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class BillsRow : global::System.Data.DataRow {
+        public partial class TrasactionRow : global::System.Data.DataRow {
             
-            private BillsDataTable tableBills;
+            private TrasactionDataTable tableTrasaction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal BillsRow(global::System.Data.DataRowBuilder rb) : 
+            internal TrasactionRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableBills = ((BillsDataTable)(this.Table));
+                this.tableTrasaction = ((TrasactionDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int BillsID {
-                get {
-                    return ((int)(this[this.tableBills.BillsIDColumn]));
-                }
-                set {
-                    this[this.tableBills.BillsIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Date {
+            public string Acc_id {
                 get {
                     try {
-                        return ((string)(this[this.tableBills.DateColumn]));
+                        return ((string)(this[this.tableTrasaction.Acc_idColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Date\' in table \'Bills\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Acc_id\' in table \'Trasaction\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBills.DateColumn] = value;
+                    this[this.tableTrasaction.Acc_idColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Vendor_name {
+            public string Cure {
                 get {
                     try {
-                        return ((string)(this[this.tableBills.Vendor_nameColumn]));
+                        return ((string)(this[this.tableTrasaction.CureColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Vendor_name\' in table \'Bills\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Cure\' in table \'Trasaction\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBills.Vendor_nameColumn] = value;
+                    this[this.tableTrasaction.CureColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Due_date {
-                get {
-                    try {
-                        return ((string)(this[this.tableBills.Due_dateColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Due_date\' in table \'Bills\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBills.Due_dateColumn] = value;
-                }
+            public bool IsAcc_idNull() {
+                return this.IsNull(this.tableTrasaction.Acc_idColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Amt {
-                get {
-                    try {
-                        return ((string)(this[this.tableBills.AmtColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Amt\' in table \'Bills\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBills.AmtColumn] = value;
-                }
+            public void SetAcc_idNull() {
+                this[this.tableTrasaction.Acc_idColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Paid {
-                get {
-                    try {
-                        return ((string)(this[this.tableBills.PaidColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Paid\' in table \'Bills\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBills.PaidColumn] = value;
-                }
+            public bool IsCureNull() {
+                return this.IsNull(this.tableTrasaction.CureColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Bal {
-                get {
-                    try {
-                        return ((string)(this[this.tableBills.BalColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Bal\' in table \'Bills\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBills.BalColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsDateNull() {
-                return this.IsNull(this.tableBills.DateColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetDateNull() {
-                this[this.tableBills.DateColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsVendor_nameNull() {
-                return this.IsNull(this.tableBills.Vendor_nameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetVendor_nameNull() {
-                this[this.tableBills.Vendor_nameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsDue_dateNull() {
-                return this.IsNull(this.tableBills.Due_dateColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetDue_dateNull() {
-                this[this.tableBills.Due_dateColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsAmtNull() {
-                return this.IsNull(this.tableBills.AmtColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetAmtNull() {
-                this[this.tableBills.AmtColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsPaidNull() {
-                return this.IsNull(this.tableBills.PaidColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetPaidNull() {
-                this[this.tableBills.PaidColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsBalNull() {
-                return this.IsNull(this.tableBills.BalColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetBalNull() {
-                this[this.tableBills.BalColumn] = global::System.Convert.DBNull;
+            public void SetCureNull() {
+                this[this.tableTrasaction.CureColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -822,22 +610,22 @@ namespace gst {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class BillsRowChangeEvent : global::System.EventArgs {
+        public class TrasactionRowChangeEvent : global::System.EventArgs {
             
-            private BillsRow eventRow;
+            private TrasactionRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BillsRowChangeEvent(BillsRow row, global::System.Data.DataRowAction action) {
+            public TrasactionRowChangeEvent(TrasactionRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BillsRow Row {
+            public TrasactionRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -865,7 +653,7 @@ namespace gst.GSTDataSet7TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class BillsTableAdapter : global::System.ComponentModel.Component {
+    public partial class TrasactionTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlServerCe.SqlCeDataAdapter _adapter;
         
@@ -879,7 +667,7 @@ namespace gst.GSTDataSet7TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public BillsTableAdapter() {
+        public TrasactionTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -976,43 +764,16 @@ namespace gst.GSTDataSet7TableAdapters {
             this._adapter = new global::System.Data.SqlServerCe.SqlCeDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Bills";
-            tableMapping.ColumnMappings.Add("BillsID", "BillsID");
-            tableMapping.ColumnMappings.Add("Date", "Date");
-            tableMapping.ColumnMappings.Add("Vendor_name", "Vendor_name");
-            tableMapping.ColumnMappings.Add("Due_date", "Due_date");
-            tableMapping.ColumnMappings.Add("Amt", "Amt");
-            tableMapping.ColumnMappings.Add("Paid", "Paid");
-            tableMapping.ColumnMappings.Add("Bal", "Bal");
+            tableMapping.DataSetTable = "Trasaction";
+            tableMapping.ColumnMappings.Add("Acc_id", "Acc_id");
+            tableMapping.ColumnMappings.Add("Cure", "Cure");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlServerCe.SqlCeCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [Bills] WHERE (([BillsID] = @p1))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "BillsID", global::System.Data.DataRowVersion.Original, null));
             this._adapter.InsertCommand = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [Bills] ([Date], [Vendor_name], [Due_date], [Amt], [Paid], [Bal]) VAL" +
-                "UES (@p1, @p2, @p3, @p4, @p5, @p6)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Trasaction] ([Acc_id], [Cure]) VALUES (@p1, @p2)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Date", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Vendor_name", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p3", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Due_date", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p4", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Amt", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p5", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Paid", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p6", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Bal", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand = new global::System.Data.SqlServerCe.SqlCeCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [Bills] SET [Date] = @p1, [Vendor_name] = @p2, [Due_date] = @p3, [Amt] = @" +
-                "p4, [Paid] = @p5, [Bal] = @p6 WHERE (([BillsID] = @p7))";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Date", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Vendor_name", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p3", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Due_date", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p4", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Amt", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p5", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Paid", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p6", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Bal", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p7", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "BillsID", global::System.Data.DataRowVersion.Original, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Acc_id", global::System.Data.DataRowVersion.Current, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Cure", global::System.Data.DataRowVersion.Current, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1028,8 +789,7 @@ namespace gst.GSTDataSet7TableAdapters {
             this._commandCollection = new global::System.Data.SqlServerCe.SqlCeCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [BillsID], [Date], [Vendor_name], [Due_date], [Amt], [Paid], [Bal] FROM [B" +
-                "ills]";
+            this._commandCollection[0].CommandText = "SELECT [Acc_id], [Cure] FROM [Trasaction]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1037,7 +797,7 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(GSTDataSet7.BillsDataTable dataTable) {
+        public virtual int Fill(GSTDataSet7.TrasactionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1050,9 +810,9 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual GSTDataSet7.BillsDataTable GetData() {
+        public virtual GSTDataSet7.TrasactionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            GSTDataSet7.BillsDataTable dataTable = new GSTDataSet7.BillsDataTable();
+            GSTDataSet7.TrasactionDataTable dataTable = new GSTDataSet7.TrasactionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1060,7 +820,7 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GSTDataSet7.BillsDataTable dataTable) {
+        public virtual int Update(GSTDataSet7.TrasactionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -1068,7 +828,7 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(GSTDataSet7 dataSet) {
-            return this.Adapter.Update(dataSet, "Bills");
+            return this.Adapter.Update(dataSet, "Trasaction");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1089,30 +849,8 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int p1) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string p1, string p2, string p3, string p4, string p5, string p6) {
+        public virtual int Insert(string p1, string p2) {
             if ((p1 == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1124,30 +862,6 @@ namespace gst.GSTDataSet7TableAdapters {
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(p2));
-            }
-            if ((p3 == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(p3));
-            }
-            if ((p4 == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(p4));
-            }
-            if ((p5 == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(p5));
-            }
-            if ((p6 == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(p6));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1161,64 +875,6 @@ namespace gst.GSTDataSet7TableAdapters {
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string p1, string p2, string p3, string p4, string p5, string p6, int p7) {
-            if ((p1 == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(p1));
-            }
-            if ((p2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(p2));
-            }
-            if ((p3 == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(p3));
-            }
-            if ((p4 == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(p4));
-            }
-            if ((p5 == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(p5));
-            }
-            if ((p6 == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(p6));
-            }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(p7));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
         }
@@ -1236,7 +892,7 @@ namespace gst.GSTDataSet7TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private BillsTableAdapter _billsTableAdapter;
+        private TrasactionTableAdapter _trasactionTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1258,12 +914,12 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public BillsTableAdapter BillsTableAdapter {
+        public TrasactionTableAdapter TrasactionTableAdapter {
             get {
-                return this._billsTableAdapter;
+                return this._trasactionTableAdapter;
             }
             set {
-                this._billsTableAdapter = value;
+                this._trasactionTableAdapter = value;
             }
         }
         
@@ -1286,9 +942,9 @@ namespace gst.GSTDataSet7TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._billsTableAdapter != null) 
-                            && (this._billsTableAdapter.Connection != null))) {
-                    return this._billsTableAdapter.Connection;
+                if (((this._trasactionTableAdapter != null) 
+                            && (this._trasactionTableAdapter.Connection != null))) {
+                    return this._trasactionTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1303,7 +959,7 @@ namespace gst.GSTDataSet7TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._billsTableAdapter != null)) {
+                if ((this._trasactionTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1317,12 +973,12 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(GSTDataSet7 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._billsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Bills.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._trasactionTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Trasaction.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._billsTableAdapter.Update(updatedRows));
+                    result = (result + this._trasactionTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1336,11 +992,11 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(GSTDataSet7 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._billsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Bills.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._trasactionTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Trasaction.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._billsTableAdapter.Update(addedRows));
+                    result = (result + this._trasactionTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1354,11 +1010,11 @@ namespace gst.GSTDataSet7TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(GSTDataSet7 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._billsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Bills.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._trasactionTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Trasaction.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._billsTableAdapter.Update(deletedRows));
+                    result = (result + this._trasactionTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1401,8 +1057,8 @@ namespace gst.GSTDataSet7TableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._billsTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._billsTableAdapter.Connection) == false))) {
+            if (((this._trasactionTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._trasactionTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1438,13 +1094,13 @@ namespace gst.GSTDataSet7TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._billsTableAdapter != null)) {
-                    revertConnections.Add(this._billsTableAdapter, this._billsTableAdapter.Connection);
-                    this._billsTableAdapter.Connection = ((global::System.Data.SqlServerCe.SqlCeConnection)(workConnection));
-                    this._billsTableAdapter.Transaction = ((global::System.Data.SqlServerCe.SqlCeTransaction)(workTransaction));
-                    if (this._billsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._billsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._billsTableAdapter.Adapter);
+                if ((this._trasactionTableAdapter != null)) {
+                    revertConnections.Add(this._trasactionTableAdapter, this._trasactionTableAdapter.Connection);
+                    this._trasactionTableAdapter.Connection = ((global::System.Data.SqlServerCe.SqlCeConnection)(workConnection));
+                    this._trasactionTableAdapter.Transaction = ((global::System.Data.SqlServerCe.SqlCeTransaction)(workTransaction));
+                    if (this._trasactionTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._trasactionTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._trasactionTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1505,9 +1161,9 @@ namespace gst.GSTDataSet7TableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._billsTableAdapter != null)) {
-                    this._billsTableAdapter.Connection = ((global::System.Data.SqlServerCe.SqlCeConnection)(revertConnections[this._billsTableAdapter]));
-                    this._billsTableAdapter.Transaction = null;
+                if ((this._trasactionTableAdapter != null)) {
+                    this._trasactionTableAdapter.Connection = ((global::System.Data.SqlServerCe.SqlCeConnection)(revertConnections[this._trasactionTableAdapter]));
+                    this._trasactionTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

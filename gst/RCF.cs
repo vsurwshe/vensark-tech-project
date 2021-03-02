@@ -24,11 +24,9 @@ namespace gst
 
             try
             {
-                String no = "#RET-INV-" + RetainerInvoices.number;
-                String nam = RetainerInvoices.nam;
-                MessageBox.Show(no + "\n" + nam);
+                String no = "#RET-INV-" + Payments.com;
+                MessageBox.Show(no);
                 String q1 = "SELECT * FROM [Retainer_Invoice_De] where [Ref]='" + no + "'";
-                String q3 = "SELECT * from customer  where [First_name]='" + nam + "'";
                 // String q1 = "SELECT  Est_Details.Date,Estimates.Cust_name, Est_Details.Expire_date, Est_Details.Items, Est_Details.Qty, Est_Details.Rate, Est_Details.Amt, Est_Details.Sub_Total, Est_Details.Discount,Est_Details.Adjustment, Est_Details.Total, Estimates.Cust_name, Est_Details.Ref FROM Est_Details INNER JOIN Estimates ON Est_Details.Total = Estimates.Amount where  Est_Details.[Ref]=" + no + "";
                 SqlCeConnection con = new SqlCeConnection(Properties.Settings.Default.conne);
                 SqlCeCommand cmd = new SqlCeCommand();
@@ -38,13 +36,9 @@ namespace gst
                 cmd.Connection = con;
                 cmd.CommandText = q1;
                 sad.SelectCommand = cmd;
-                sad.Fill(dt, "Table[0]");
-                cmd.CommandText = q3;
-                sad.SelectCommand = cmd;
-                sad.Fill(dt, "Table[1]");
+                sad.Fill(dt,"Table[0]");
                 RET r = new RET();
                 r.Database.Tables["Retainer_Invoice_De"].SetDataSource(dt.Tables[0]);
-                r.Database.Tables["customer"].SetDataSource(dt.Tables[1]);
                 rptviwer.ReportSource = null;
                 rptviwer.ReportSource = r;
 

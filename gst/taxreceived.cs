@@ -45,10 +45,9 @@ namespace gst
             if (saveFileDialoge.ShowDialog() == DialogResult.OK)
             {
                 workbook.SaveAs(saveFileDialoge.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-                MessageBox.Show("Excel Report Saved ");
             }
             app.Quit();
-            
+            MessageBox.Show("Excel Report Saved ");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,7 +61,7 @@ namespace gst
             printer.PageNumberInHeader = false;
             printer.PrintColumnHeaders = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Renuka Cometics Tax Received Report";
+            printer.Footer = "Shri Laxmi Enterprises Tax Received Report";
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dataGridView1);
         }

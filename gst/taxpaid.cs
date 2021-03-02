@@ -20,34 +20,33 @@ namespace gst
 
         private void Add_Click(object sender, EventArgs e)
         {
-             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel._Worksheet worksheet = workbook.Sheets["Sheet1"];
             worksheet = workbook.ActiveSheet;
             worksheet.Name = "Tax Paid Sheet";
 
-            for (int i = 1; i < dataGridView1.Columns.Count + 1;i++ )
+            for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
             {
-                worksheet.Cells[ 1 , i ] = dataGridView1.Columns[ i - 1 ].HeaderText;
+                worksheet.Cells[1, i] = dataGridView1.Columns[i - 1].HeaderText;
             }
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
                 for (int j = 0; j < dataGridView1.Columns.Count; j++)
                 {
-                    worksheet.Cells[ i + 2, j + 1 ] = dataGridView1.Rows[i].Cells[j].Value;
+                    worksheet.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value;
                 }
             }
 
             var saveFileDialoge = new SaveFileDialog();
             saveFileDialoge.FileName = "Tax Paid Report " + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
             saveFileDialoge.DefaultExt = ".xls";
-            if(saveFileDialoge.ShowDialog()==DialogResult.OK)
+            if (saveFileDialoge.ShowDialog() == DialogResult.OK)
             {
-                workbook.SaveAs(saveFileDialoge.FileName,Type.Missing,Type.Missing,Type.Missing,Type.Missing,Type.Missing,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive,Type.Missing,Type.Missing,Type.Missing,Type.Missing,Type.Missing);
-                MessageBox.Show("Excel Report Saved ");
+                workbook.SaveAs(saveFileDialoge.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             }
             app.Quit();
-            
+            MessageBox.Show("Excel Report Saved ");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,7 +60,7 @@ namespace gst
             printer.PageNumberInHeader = false;
             printer.PrintColumnHeaders = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Renuka Cometics Tax Paid Report";
+            printer.Footer = "Shri Laxmi Enterprises Tax Paid Report";
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dataGridView1);
         }
@@ -133,18 +132,15 @@ namespace gst
             }
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-           
-        }
+     
 
         private void button2_Click(object sender, EventArgs e)
         {
             SqlCeConnection conn = new SqlCeConnection(Properties.Settings.Default.conne);
             conn.Open();
             SqlCeCommand cmd2 = new SqlCeCommand();
-           // MessageBox.Show(dateTimePicker1.Value.ToString());
-           // MessageBox.Show(dateTimePicker2.Value.ToString());
+            // MessageBox.Show(dateTimePicker1.Value.ToString());
+            // MessageBox.Show(dateTimePicker2.Value.ToString());
             string query = "SELECT * FROM Bill_Tax where Date_I BETWEEN '" + dateTimePicker1.Value.ToString() + " 'AND '" + dateTimePicker2.Value.ToString() + "'";
             using (SqlCeDataAdapter adapter = new SqlCeDataAdapter(query, conn))
             {
@@ -163,6 +159,23 @@ namespace gst
             textBox2.Text = Convert.ToString(sum);
             textBox3.Text = Convert.ToString(sum2);
             conn.Close();
+            
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

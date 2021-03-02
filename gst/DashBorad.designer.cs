@@ -269,7 +269,7 @@
             this.AutoScrollMargin = new System.Drawing.Size(1, 1);
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::gst.Properties.Resources.background_1974516_1920;
-            this.ClientSize = new System.Drawing.Size(1124, 772);
+            this.ClientSize = new System.Drawing.Size(1124, 780);
             this.Controls.Add(this.restore);
             this.Controls.Add(this.backup);
             this.Controls.Add(this.groupBox4);

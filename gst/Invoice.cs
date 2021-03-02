@@ -157,11 +157,11 @@ namespace gst
                         item.SubItems.Add(Convert.ToString(val4));
                         Double cgsttax = Convert.ToDouble(comboBox4.Text) / 2;
                         Double cgst = (val4 * cgsttax )/ 100;
-                        item.SubItems.Add(Convert.ToString(Math.Round(cgst,2)));
+                        item.SubItems.Add(Convert.ToString(cgst));
                         item.SubItems.Add(Convert.ToString(val4));
                         Double sgsttax = Convert.ToDouble(comboBox4.Text) / 2;
                         Double sgst = (val4 * sgsttax )/ 100;
-                        item.SubItems.Add(Convert.ToString(Math.Round(cgst,2)));
+                        item.SubItems.Add(Convert.ToString(cgst));
                         listView1.Items.Remove(index1);
                         listView1.Items.Add(item);
                         Double cst = 0.0, sst = 0.0;
@@ -388,7 +388,7 @@ namespace gst
         void inno()
         {
             Double so = dataGridView1.RowCount;
-            textBox11.Text ="#REN-"+Convert.ToString(so);
+            textBox11.Text ="#LAX-"+Convert.ToString(so);
         }
         public void cle2()
         {
@@ -445,7 +445,7 @@ public void save1()
                 cmd.Connection = conn;
                 //Int32 pa = Convert.ToInt32(textBox12.Text);
                 //Int32 ne = Convert.ToInt32(textBox14.Text);
-                if (textBox13.Text.Equals("0"))
+                if (textBox13.Text != "0")
                 {
                     cmd.CommandText = "INSERT INTO  Invoice ([I_date],[Cust_name],[So_no],[Due_date],[Amt],[Paid],[Bal_due]) VALUES('" + dateTimePicker1.Text + "','" + salution.Text + "','" + textBox2.Text + "','" + dateTimePicker2.Text + "','" + textBox8.Text + "','" + textBox13.Text + "','" + Convert.ToString(val3+totgst) + "')";
                     cmd.ExecuteNonQuery();
@@ -477,7 +477,7 @@ public void save1()
                 }
                
                 string s2 = "invoice order pay";
-                String s12 = "Credit";
+                String s12 = "Cash";
                 so1 = dataGridView1.RowCount;
                 cmd.CommandText = "insert into  payment_recive ([date_p],[type],[ref],[cust_name],[mode],[amt],[Desp]) values('" + dateTimePicker1.Text + "','" + s2 + "','" + textBox11.Text + "','" + salution.Text + "','" + s12 + "','" + textBox13.Text + "','" + s12 + "')";
                 cmd.ExecuteNonQuery();
@@ -517,7 +517,7 @@ public void save1()
                     string cgamt = li.SubItems[2].Text;
                     string sgta = li.SubItems[3].Text;
                     string sgamt = li.SubItems[4].Text;
-                    string q1 = "INSERT INTO  Inv_Tax ([Date_I],[Inv_Id],[Tax],[CTA],[CAmt],[STA],[SAmt],[CGST_t],[SGST_t],[HINVTAX]) VALUES('" + dateTimePicker1.Text + "','" + textBox11.Text + "','" + ta + "','" + cgta + "','" + cgamt + "','" + sgta + "','" + sgamt + "','" + textBox18.Text + "','" + textBox17.Text + "','" + hat + "')";
+                    string q1 = "INSERT INTO  Inv_Tax ([Date_I],[Inv_Id],[Tax],[CTA],[CAmt],[STA],[SAmt],[CGST_t],[SGST_t],[HINVTAX]) VALUES('" + dateTimePicker1.Text + "','" + textBox11.Text + "','" + ta + "','" + cgta + "','" + cgamt + "','" + sgta + "','" + sgamt + "','" + comboBox1.Text + "','" + textBox17.Text + "','" + hat + "')";
                     SqlCeCommand cmd2 = new SqlCeCommand(q1, conn);
                     cmd2.ExecuteNonQuery();
                 }
@@ -785,12 +785,12 @@ public void save1()
                     Double cgsttax=Convert.ToDouble(comboBox4.Text)/2;
                     Double cgst = (val3 * cgsttax / 100);
                     //cst = cst + cgst;
-                    item.SubItems.Add(Convert.ToString(Math.Round(cgst,2)));
+                    item.SubItems.Add(Convert.ToString(cgst));
                     item.SubItems.Add(Convert.ToString(val3));
                     Double sgsttax = Convert.ToDouble(comboBox4.Text) / 2;
                     Double sgst = (val3 * sgsttax / 100);
                     //sst = sst + sgst;
-                    item.SubItems.Add(Convert.ToString(Math.Round(cgst,2)));
+                    item.SubItems.Add(Convert.ToString(cgst));
                     listView1.Items.Add(item);
                     Double cst = 0.0, sst = 0.0;
                     foreach (ListViewItem li in listView1.Items)

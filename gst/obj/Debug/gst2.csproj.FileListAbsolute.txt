@@ -220,15 +220,13 @@ C:\Users\Makrand\Desktop\SHRI ENTERPIRZES\gst\obj\Debug\gst.exe.manifest
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES\gst\obj\Debug\gst.application
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES\gst\bin\Debug\gst.pdb
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES\gst\obj\Debug\gst2.csprojResolveAssemblyReference.cache
-C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\bin\Debug\gst.exe.config
-C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst2.csproj.ResolveComReference.cache
-C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.exe
-C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.pdb
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\bin\Debug\GST.sdf
+C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\bin\Debug\gst.exe.config
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\bin\Debug\gst.exe.manifest
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\bin\Debug\gst.application
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\bin\Debug\gst.exe
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\bin\Debug\gst.pdb
+C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst2.csproj.ResolveComReference.cache
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.Bank.resources
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.BankTran.resources
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.BARGEN.resources
@@ -273,112 +271,5 @@ C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.VendorCreditsMa
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst2.csproj.GenerateResource.Cache
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.exe.manifest
 C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.application
-C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst2.csprojResolveAssemblyReference.cache
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\bin\Debug\GST.sdf
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\bin\Debug\gst.exe.config
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\bin\Debug\gst.exe.manifest
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\bin\Debug\gst.application
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\bin\Debug\gst.exe
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\bin\Debug\gst.pdb
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst2.csprojResolveAssemblyReference.cache
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst2.csproj.ResolveComReference.cache
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Bank.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.BankTran.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.BARGEN.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.billrp.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.BillsMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Contacts.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.CreditNotes.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.CurrencyAdjustmentMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.DashBorad.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.EST_CRF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.EXP.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Expensemain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Invoice.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.INV_REF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.itemadjustment.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Main.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.ManulJournalMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.PaymentMadRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.PaymentMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.PaymentRecRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Payments.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.pro.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.pur1.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.PurchaseOrder.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.PurchaseRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.RCF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.RecurringBillsMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.RecurringExpMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.RecurringInvoices.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.RetainerInvoices.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Estimates.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Items.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.Properties.Resources.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.salesOrder.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.SalesRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.SO_CRF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.StockRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.taxpaid.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.taxreceived.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.TransactionLocking.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.VendorCreditsMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst2.csproj.GenerateResource.Cache
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.exe.manifest
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.application
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.exe
-C:\Users\Makrand\Desktop\RENUKA Costemics\gst\obj\Debug\gst.pdb
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\bin\Debug\gst.exe.config
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst2.csproj.ResolveComReference.cache
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.exe
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.pdb
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\bin\Debug\GST.sdf
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\bin\Debug\gst.exe.manifest
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\bin\Debug\gst.application
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\bin\Debug\gst.exe
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\bin\Debug\gst.pdb
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst2.csprojResolveAssemblyReference.cache
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Bank.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.BankTran.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.BARGEN.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.billrp.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.BillsMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Contacts.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.CreditNotes.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.CurrencyAdjustmentMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.DashBorad.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.EST_CRF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.EXP.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Expensemain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Invoice.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.INV_REF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.itemadjustment.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Main.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.ManulJournalMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.PaymentMadRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.PaymentMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.PaymentRecRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Payments.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.pro.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.pur1.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.PurchaseOrder.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.PurchaseRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.RCF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.RecurringBillsMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.RecurringExpMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.RecurringInvoices.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.RetainerInvoices.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Estimates.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Items.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.Properties.Resources.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.salesOrder.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.SalesRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.SO_CRF.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.StockRPT.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.taxpaid.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.taxreceived.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.TransactionLocking.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.VendorCreditsMain.resources
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst2.csproj.GenerateResource.Cache
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.exe.manifest
-C:\Users\Makrand\Desktop\RENUKA Costemics V0.3\gst\obj\Debug\gst.application
+C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.exe
+C:\Users\Makrand\Desktop\SHRI ENTERPIRZES V0.3\gst\obj\Debug\gst.pdb

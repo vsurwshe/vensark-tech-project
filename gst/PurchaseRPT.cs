@@ -20,12 +20,26 @@ namespace gst
 
         private void PurchaseRPT_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'gSTDataSet7.Bills' table. You can move, or remove it, as needed.
-            this.billsTableAdapter.Fill(this.gSTDataSet7.Bills);
+            // TODO: This line of code loads data into the 'gSTDataSet8.Bill_Tax' table. You can move, or remove it, as needed.
+            this.bill_TaxTableAdapter.Fill(this.gSTDataSet8.Bill_Tax);
             // TODO: This line of code loads data into the 'pURCHASEORDER.purchase_order' table. You can move, or remove it, as needed.
-            this.purchase_orderTableAdapter1.Fill(this.pURCHASEORDER.purchase_order);
+            //this.purchase_orderTableAdapter1.Fill(this.pURCHASEORDER.purchase_order);
             // TODO: This line of code loads data into the 'purchaseRptData.purchase_order' table. You can move, or remove it, as needed.
           //  this.purchase_orderTableAdapter.Fill(this.purchaseRptData.purchase_order);
+
+            Double sum = 0;
+            Double sum2 = 0;
+            for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+            {
+
+                sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[10].Value);
+                sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[11].Value);
+            }
+            textBox2.Text = Convert.ToString(sum);
+            textBox3.Text = Convert.ToString(sum2);
+
+
+
 
         }
 
@@ -55,9 +69,10 @@ namespace gst
             if (saveFileDialoge.ShowDialog() == DialogResult.OK)
             {
                 workbook.SaveAs(saveFileDialoge.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+                MessageBox.Show("Excel Report Saved ");
             }
             app.Quit();
-            MessageBox.Show("Excel Report Saved ");
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,7 +86,7 @@ namespace gst
             printer.PageNumberInHeader = false;
             printer.PrintColumnHeaders = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Renuka Cometics Purchase Order Report";
+            printer.Footer = "Shri Laxmi Enterprises Purchase Order Report";
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dataGridView1);
         }
@@ -90,6 +105,17 @@ namespace gst
                 adapter.Fill(ds);
                 dataGridView1.DataSource = ds.Tables[0];
             }
+            Double sum = 0;
+            Double sum2 = 0;
+            for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+            {
+
+                sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[10].Value);
+                sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[11].Value);
+            }
+            textBox2.Text = Convert.ToString(sum);
+            textBox3.Text = Convert.ToString(sum2);
+            conn.Close();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)

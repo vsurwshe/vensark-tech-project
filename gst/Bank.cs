@@ -37,11 +37,19 @@ namespace gst
         {
             SqlCeConnection conn = new SqlCeConnection(Properties.Settings.Default.conne);
             conn.Open();
-            SqlCeCommand cmd1 = new SqlCeCommand("select [Acc_id] AS ACC_ID,[Bank_name] AS BANK,[Acc_name] AS ACC_HOLDER,[Acc_no] AS ACC_NO,[Acc_type] AS ACC_TYPE ,[Ifsc] AS IFSC_CODE,[Bra_add] AS BRANCH_ADD ,[Opening_bal] AS OPENING_BAL from Banks order by [Acc_id] Desc ", conn);
+            SqlCeCommand cmd1 = new SqlCeCommand("select [Acc_id] AS ACC_ID,[Bank_name] AS BANK,[Acc_name] AS ACC_HOLDER,[Acc_no] AS ACC_NO,[Acc_type] AS ACC_TYPE ,[Ifsc] AS IFSC_CODE,[Bra_add] AS BRANCH_ADD ,[Opening_bal] AS OPENING_BAL,[Opening_bal] AS CURRENT_BALANCE  from Banks order by [Acc_id] Desc ", conn);
+            
             SqlCeDataAdapter da = new SqlCeDataAdapter(cmd1);
+          
             DataTable dt = new DataTable();
+          
             da.Fill(dt);
+           
+            //DataTable dt6 = new DataTable();
+            //dt6 = dt.Copy();
+            //dt6.Merge(dt1, true);
             dataGridView1.DataSource = dt;
+          
             conn.Close();
         }
         void reload1()
@@ -97,6 +105,8 @@ namespace gst
 
         private void Bank_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'gSTDataSet7.Trasaction' table. You can move, or remove it, as needed.
+            this.trasactionTableAdapter.Fill(this.gSTDataSet7.Trasaction);
             reload();
             loaddat();
         }
@@ -150,6 +160,9 @@ namespace gst
                         Int32 ch = cu + am;
                         cmd.CommandText = "INSERT INTO  Trasaction ([Type],[Party],[Amount],Cure,[Pay_mode],[Descp],[Purpose],[Acc_id],[Date_t]) VALUES('" + s + "','" + textBox13.Text + "','" + textBox14.Text + "','" + Convert.ToString(ch) + "','" + comboBox3.Text + "','" + textBox7.Text + "','" + textBox6.Text + "','" + comboBox5.Text + "','" + dateTimePicker2.Text + "')";
                         cmd.ExecuteNonQuery();
+
+                        //cmd.CommandText = "UPDATE Banks  SET [Opening_bal]='" + Convert.ToString(ch) + "' where [Acc_id]='" + comboBox5.Text + "'";
+                        //cmd.ExecuteNonQuery();
                         conn.Close();
                         MessageBox.Show("Credit Trasaction Add Successfully");
                         reload1();
@@ -182,6 +195,8 @@ namespace gst
                             Int32 ch = cu - am;
                             cmd.CommandText = "INSERT INTO  Trasaction ([Type],[Party],[Amount],Cure,[Pay_mode],[Descp],[Purpose],[Acc_id],[Date_t]) VALUES('" + s + "','" + textBox4.Text + "','" + textBox3.Text + "','" + Convert.ToString(ch) + "','" + comboBox2.Text + "','" + textBox5.Text + "','" + textBox1.Text + "','" + comboBox4.Text + "','" + dateTimePicker1.Text + "')";
                             cmd.ExecuteNonQuery();
+                            //cmd.CommandText = "UPDATE Banks  SET [Opening_bal]='" + Convert.ToString(ch) + "' where [Acc_id]='" + comboBox5.Text + "'";
+                            //cmd.ExecuteNonQuery();
                             conn.Close();
                             MessageBox.Show("Debit Trasaction Add Successfully");
                             reload1();
@@ -358,6 +373,7 @@ namespace gst
             DataTable dt1 = new DataTable();
             da1.Fill(dt1);
             dataGridView2.DataSource = dt1;
+
         }
 
        

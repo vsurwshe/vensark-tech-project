@@ -70,10 +70,10 @@ namespace gst
                 if (count == strArr.Length - 1)
                     tem = strArr[count];
 
-                //MessageBox.Show(strArr[count]);
+                MessageBox.Show(strArr[count]);
             }
            
-            if (com.Equals("Exp-" + tem))
+            if (com.Equals("#EXP-" + tem))
             {
                 
                 com = tem;
@@ -82,9 +82,9 @@ namespace gst
             }
             else
             {
-                if (com.Equals("PO." + tem))
+                if (com.Equals("#PO-" + tem))
                 {
-                    //MessageBox.Show("hii");
+                  //  MessageBox.Show("hii");
                     com = tem;
                     pur1 ob10 = new pur1();
                     ob10.ShowDialog();
@@ -94,6 +94,7 @@ namespace gst
                     if (com.Equals("#BILLNO-" + tem))
                     {
                         //MessageBox.Show("hii");
+                        BillsMain.nam = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
                         com = tem;
                         billrp ob1 = new billrp();
                         ob1.ShowDialog();

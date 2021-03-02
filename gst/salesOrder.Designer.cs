@@ -282,6 +282,7 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(137, 26);
             this.textBox9.TabIndex = 9;
+            this.textBox9.Visible = false;
             // 
             // comboBox6
             // 
@@ -299,6 +300,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(409, 24);
             this.comboBox6.TabIndex = 8;
+            this.comboBox6.Visible = false;
             // 
             // label12
             // 
@@ -309,6 +311,7 @@
             this.label12.Size = new System.Drawing.Size(61, 19);
             this.label12.TabIndex = 172;
             this.label12.Text = "Amount";
+            this.label12.Visible = false;
             // 
             // label17
             // 
@@ -319,6 +322,7 @@
             this.label17.Size = new System.Drawing.Size(111, 19);
             this.label17.TabIndex = 171;
             this.label17.Text = "Service Details";
+            this.label17.Visible = false;
             // 
             // button1
             // 
@@ -332,6 +336,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "+ADD ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // qua1
@@ -355,6 +360,7 @@
             // 
             this.rat1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.rat1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.rat1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.rat1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rat1.FormattingEnabled = true;
             this.rat1.Items.AddRange(new object[] {

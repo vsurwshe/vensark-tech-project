@@ -26,16 +26,17 @@ namespace gst
             ///this.invoiceTableAdapter.Fill(this.invoiceDataSet.Invoice);
             Double sum = 0;
             Double sum2 = 0;
-
+           
             for (int i = 0; i < dataGridView1.Rows.Count; ++i)
             {
 
                 sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value);
                 sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value);
-
+              
             }
             textBox2.Text = Convert.ToString(sum);
             textBox3.Text = Convert.ToString(sum2);
+            
         }
 
         private void Add_Click(object sender, EventArgs e)
@@ -64,9 +65,10 @@ namespace gst
             if(saveFileDialoge.ShowDialog()==DialogResult.OK)
             {
                 workbook.SaveAs(saveFileDialoge.FileName,Type.Missing,Type.Missing,Type.Missing,Type.Missing,Type.Missing,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive,Type.Missing,Type.Missing,Type.Missing,Type.Missing,Type.Missing);
+                MessageBox.Show("Excel Report Saved ");
             }
             app.Quit();
-            MessageBox.Show("Excel Report Saved ");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -80,7 +82,7 @@ namespace gst
             printer.PageNumberInHeader = false;
             printer.PrintColumnHeaders = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Renuka Cometics Sales Report";
+            printer.Footer = "Shri Laxmi Enterprises Sales Report";
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dataGridView1);
         }
@@ -150,13 +152,11 @@ namespace gst
             }
             Double sum = 0;
             Double sum2 = 0;
-
             for (int i = 0; i < dataGridView1.Rows.Count; ++i)
             {
 
                 sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value);
                 sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value);
-
             }
             textBox2.Text = Convert.ToString(sum);
             textBox3.Text = Convert.ToString(sum2);

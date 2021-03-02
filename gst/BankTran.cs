@@ -30,9 +30,10 @@ namespace gst
                 sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value);
                 sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[9].Value);
             }
-            textBox4.Text = Convert.ToString(sum);
+            textBox2.Text = Convert.ToString(sum);
             textBox3.Text = Convert.ToString(sum2);
-            
+
+
         }
 
         private void Add_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace gst
                 MessageBox.Show("Excel Report Saved ");
             }
             app.Quit();
-           
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -78,7 +79,7 @@ namespace gst
             printer.PageNumberInHeader = false;
             printer.PrintColumnHeaders = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Renuka Cometics Tax Paid Report";
+            printer.Footer = "Shri Laxmi Enterprises Tax Paid Report";
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dataGridView1);
         }
@@ -106,16 +107,18 @@ namespace gst
                         adapter.Fill(ds1);
                         dataGridView1.DataSource = ds1.Tables[0];
                     }
-                    Double sum = 0;
-                    Double sum2 = 0;
-                    for (int i = 0; i < dataGridView1.Rows.Count; ++i)
-                    {
+                    //Double sum = 0;
+                    //Double sum2 = 0;
+                    //for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+                    //{
 
-                        sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value);
-                        sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[9].Value);
-                    }
-                    textBox4.Text = Convert.ToString(sum);
-                    textBox3.Text = Convert.ToString(sum2);
+                    //    sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value);
+                    //    sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value);
+                    //}
+                    //textBox2.Text = Convert.ToString(sum);
+                    //textBox3.Text = Convert.ToString(sum2);
+                    //con.Close();
+                    //textBox1.Text = "";
                 }
                 catch (Exception o)
                 {
@@ -158,7 +161,7 @@ namespace gst
                 sum += Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value);
                 sum2 += Convert.ToDouble(dataGridView1.Rows[i].Cells[9].Value);
             }
-            textBox4.Text = Convert.ToString(sum);
+            textBox2.Text = Convert.ToString(sum);
             textBox3.Text = Convert.ToString(sum2);
             conn.Close();
         }

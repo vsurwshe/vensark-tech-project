@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
@@ -50,11 +51,13 @@
             System.Windows.Forms.Label label20;
             System.Windows.Forms.Label label22;
             System.Windows.Forms.Label label24;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -94,8 +97,9 @@
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.gSTDataSet7 = new gst.GSTDataSet7();
+            this.trasactionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.trasactionTableAdapter = new gst.GSTDataSet7TableAdapters.TrasactionTableAdapter();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -120,6 +124,7 @@
             label24 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,7 +133,8 @@
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gSTDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trasactionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -394,6 +400,34 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ADD Bank";
             // 
+            // comboBox7
+            // 
+            this.comboBox7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "Savings",
+            "Current",
+            "Fixed Deposit",
+            "Reccuring Deposit"});
+            this.comboBox7.Location = new System.Drawing.Point(357, 325);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(262, 28);
+            this.comboBox7.TabIndex = 154;
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(357, 359);
+            this.dataGridView2.Name = "dataGridView2";
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.Size = new System.Drawing.Size(262, 86);
+            this.dataGridView2.TabIndex = 153;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -402,7 +436,7 @@
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Size = new System.Drawing.Size(738, 347);
+            this.dataGridView1.Size = new System.Drawing.Size(738, 307);
             this.dataGridView1.TabIndex = 152;
             // 
             // textBox2
@@ -870,33 +904,19 @@
             this.dataGridView3.Size = new System.Drawing.Size(1063, 562);
             this.dataGridView3.TabIndex = 2;
             // 
-            // comboBox7
+            // gSTDataSet7
             // 
-            this.comboBox7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "Savings",
-            "Current",
-            "Fixed Deposit",
-            "Reccuring Deposit"});
-            this.comboBox7.Location = new System.Drawing.Point(357, 359);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(262, 28);
-            this.comboBox7.TabIndex = 156;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
+            this.gSTDataSet7.DataSetName = "GSTDataSet7";
+            this.gSTDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridView2
+            // trasactionBindingSource
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(357, 393);
-            this.dataGridView2.Name = "dataGridView2";
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView2.Size = new System.Drawing.Size(262, 86);
-            this.dataGridView2.TabIndex = 155;
+            this.trasactionBindingSource.DataMember = "Trasaction";
+            this.trasactionBindingSource.DataSource = this.gSTDataSet7;
+            // 
+            // trasactionTableAdapter
+            // 
+            this.trasactionTableAdapter.ClearBeforeFill = true;
             // 
             // Bank
             // 
@@ -915,6 +935,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -927,7 +948,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gSTDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trasactionBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -975,7 +997,10 @@
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private GSTDataSet7 gSTDataSet7;
+        private System.Windows.Forms.BindingSource trasactionBindingSource;
+        private GSTDataSet7TableAdapters.TrasactionTableAdapter trasactionTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ComboBox comboBox7;
     }
 }

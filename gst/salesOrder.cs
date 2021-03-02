@@ -301,7 +301,7 @@ namespace gst
                 Int32 val1 = Convert.ToInt32(textBox8.Text);
                 Int32 val2 = Convert.ToInt32(textBox6.Text);
                 float fi = val1 + val2;
-                MessageBox.Show("val2" + val2 + "val1" + val1);
+                //MessageBox.Show("val2" + val2 + "val1" + val1);
                 textBox8.Text = Convert.ToString(fi);
                 textBox7.Text = Convert.ToString(val2);
 

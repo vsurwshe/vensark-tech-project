@@ -29,17 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vendornameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.balDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAmtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sAmtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iAmtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGSTtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sGSTtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.refDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.billTaxBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gSTDataSet8 = new gst.GSTDataSet8();
             this.purchaseorderBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pURCHASEORDER = new gst.PURCHASEORDER();
             this.purchaseorderBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -54,16 +64,16 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.gSTDataSet7 = new gst.GSTDataSet7();
-            this.billsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.billsTableAdapter = new gst.GSTDataSet7TableAdapters.BillsTableAdapter();
+            this.bill_TaxTableAdapter = new gst.GSTDataSet8TableAdapters.Bill_TaxTableAdapter();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.billTaxBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gSTDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseorderBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pURCHASEORDER)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseorderBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseRptData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gSTDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.billsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -98,66 +108,133 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dateDataGridViewTextBoxColumn,
-            this.vendornameDataGridViewTextBoxColumn,
-            this.amtDataGridViewTextBoxColumn,
-            this.paidDataGridViewTextBoxColumn,
-            this.balDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.billsBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.iDDataGridViewTextBoxColumn,
+            this.dateIDataGridViewTextBoxColumn,
+            this.taxDataGridViewTextBoxColumn,
+            this.cTADataGridViewTextBoxColumn,
+            this.cAmtDataGridViewTextBoxColumn,
+            this.sTADataGridViewTextBoxColumn,
+            this.sAmtDataGridViewTextBoxColumn,
+            this.bIDDataGridViewTextBoxColumn,
+            this.iTADataGridViewTextBoxColumn,
+            this.iAmtDataGridViewTextBoxColumn,
+            this.cGSTtDataGridViewTextBoxColumn,
+            this.sGSTtDataGridViewTextBoxColumn,
+            this.refDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.billTaxBindingSource;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.Location = new System.Drawing.Point(12, 63);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(943, 444);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.Size = new System.Drawing.Size(943, 382);
             this.dataGridView1.TabIndex = 14;
             // 
-            // dateDataGridViewTextBoxColumn
+            // iDDataGridViewTextBoxColumn
             // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // vendornameDataGridViewTextBoxColumn
+            // dateIDataGridViewTextBoxColumn
             // 
-            this.vendornameDataGridViewTextBoxColumn.DataPropertyName = "Vendor_name";
-            this.vendornameDataGridViewTextBoxColumn.HeaderText = "Vendor_name";
-            this.vendornameDataGridViewTextBoxColumn.Name = "vendornameDataGridViewTextBoxColumn";
+            this.dateIDataGridViewTextBoxColumn.DataPropertyName = "Date_I";
+            this.dateIDataGridViewTextBoxColumn.HeaderText = "Date_I";
+            this.dateIDataGridViewTextBoxColumn.Name = "dateIDataGridViewTextBoxColumn";
             // 
-            // amtDataGridViewTextBoxColumn
+            // taxDataGridViewTextBoxColumn
             // 
-            this.amtDataGridViewTextBoxColumn.DataPropertyName = "Amt";
-            this.amtDataGridViewTextBoxColumn.HeaderText = "Amt";
-            this.amtDataGridViewTextBoxColumn.Name = "amtDataGridViewTextBoxColumn";
+            this.taxDataGridViewTextBoxColumn.DataPropertyName = "Tax";
+            this.taxDataGridViewTextBoxColumn.HeaderText = "Tax";
+            this.taxDataGridViewTextBoxColumn.Name = "taxDataGridViewTextBoxColumn";
             // 
-            // paidDataGridViewTextBoxColumn
+            // cTADataGridViewTextBoxColumn
             // 
-            this.paidDataGridViewTextBoxColumn.DataPropertyName = "Paid";
-            this.paidDataGridViewTextBoxColumn.HeaderText = "Paid";
-            this.paidDataGridViewTextBoxColumn.Name = "paidDataGridViewTextBoxColumn";
+            this.cTADataGridViewTextBoxColumn.DataPropertyName = "CTA";
+            this.cTADataGridViewTextBoxColumn.HeaderText = "CTA";
+            this.cTADataGridViewTextBoxColumn.Name = "cTADataGridViewTextBoxColumn";
             // 
-            // balDataGridViewTextBoxColumn
+            // cAmtDataGridViewTextBoxColumn
             // 
-            this.balDataGridViewTextBoxColumn.DataPropertyName = "Bal";
-            this.balDataGridViewTextBoxColumn.HeaderText = "Bal";
-            this.balDataGridViewTextBoxColumn.Name = "balDataGridViewTextBoxColumn";
+            this.cAmtDataGridViewTextBoxColumn.DataPropertyName = "CAmt";
+            this.cAmtDataGridViewTextBoxColumn.HeaderText = "CAmt";
+            this.cAmtDataGridViewTextBoxColumn.Name = "cAmtDataGridViewTextBoxColumn";
+            // 
+            // sTADataGridViewTextBoxColumn
+            // 
+            this.sTADataGridViewTextBoxColumn.DataPropertyName = "STA";
+            this.sTADataGridViewTextBoxColumn.HeaderText = "STA";
+            this.sTADataGridViewTextBoxColumn.Name = "sTADataGridViewTextBoxColumn";
+            // 
+            // sAmtDataGridViewTextBoxColumn
+            // 
+            this.sAmtDataGridViewTextBoxColumn.DataPropertyName = "SAmt";
+            this.sAmtDataGridViewTextBoxColumn.HeaderText = "SAmt";
+            this.sAmtDataGridViewTextBoxColumn.Name = "sAmtDataGridViewTextBoxColumn";
+            // 
+            // bIDDataGridViewTextBoxColumn
+            // 
+            this.bIDDataGridViewTextBoxColumn.DataPropertyName = "B_ID";
+            this.bIDDataGridViewTextBoxColumn.HeaderText = "B_ID";
+            this.bIDDataGridViewTextBoxColumn.Name = "bIDDataGridViewTextBoxColumn";
+            // 
+            // iTADataGridViewTextBoxColumn
+            // 
+            this.iTADataGridViewTextBoxColumn.DataPropertyName = "ITA";
+            this.iTADataGridViewTextBoxColumn.HeaderText = "ITA";
+            this.iTADataGridViewTextBoxColumn.Name = "iTADataGridViewTextBoxColumn";
+            // 
+            // iAmtDataGridViewTextBoxColumn
+            // 
+            this.iAmtDataGridViewTextBoxColumn.DataPropertyName = "IAmt";
+            this.iAmtDataGridViewTextBoxColumn.HeaderText = "IAmt";
+            this.iAmtDataGridViewTextBoxColumn.Name = "iAmtDataGridViewTextBoxColumn";
+            // 
+            // cGSTtDataGridViewTextBoxColumn
+            // 
+            this.cGSTtDataGridViewTextBoxColumn.DataPropertyName = "CGST_t";
+            this.cGSTtDataGridViewTextBoxColumn.HeaderText = "CGST_t";
+            this.cGSTtDataGridViewTextBoxColumn.Name = "cGSTtDataGridViewTextBoxColumn";
+            // 
+            // sGSTtDataGridViewTextBoxColumn
+            // 
+            this.sGSTtDataGridViewTextBoxColumn.DataPropertyName = "SGST_t";
+            this.sGSTtDataGridViewTextBoxColumn.HeaderText = "SGST_t";
+            this.sGSTtDataGridViewTextBoxColumn.Name = "sGSTtDataGridViewTextBoxColumn";
+            // 
+            // refDataGridViewTextBoxColumn
+            // 
+            this.refDataGridViewTextBoxColumn.DataPropertyName = "ref";
+            this.refDataGridViewTextBoxColumn.HeaderText = "ref";
+            this.refDataGridViewTextBoxColumn.Name = "refDataGridViewTextBoxColumn";
+            // 
+            // billTaxBindingSource
+            // 
+            this.billTaxBindingSource.DataMember = "Bill_Tax";
+            this.billTaxBindingSource.DataSource = this.gSTDataSet8;
+            // 
+            // gSTDataSet8
+            // 
+            this.gSTDataSet8.DataSetName = "GSTDataSet8";
+            this.gSTDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // purchaseorderBindingSource1
             // 
@@ -279,19 +356,25 @@
             this.label16.TabIndex = 34;
             this.label16.Text = "Serach Purchase";
             // 
-            // gSTDataSet7
+            // bill_TaxTableAdapter
             // 
-            this.gSTDataSet7.DataSetName = "GSTDataSet7";
-            this.gSTDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bill_TaxTableAdapter.ClearBeforeFill = true;
             // 
-            // billsBindingSource
+            // textBox3
             // 
-            this.billsBindingSource.DataMember = "Bills";
-            this.billsBindingSource.DataSource = this.gSTDataSet7;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(828, 442);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(75, 22);
+            this.textBox3.TabIndex = 41;
             // 
-            // billsTableAdapter
+            // textBox2
             // 
-            this.billsTableAdapter.ClearBeforeFill = true;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(743, 442);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(79, 22);
+            this.textBox2.TabIndex = 40;
             // 
             // PurchaseRPT
             // 
@@ -299,6 +382,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(958, 533);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -316,12 +401,12 @@
             this.Text = "PurchaseRPT";
             this.Load += new System.EventHandler(this.PurchaseRPT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.billTaxBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gSTDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseorderBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pURCHASEORDER)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseorderBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseRptData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gSTDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.billsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,11 +420,6 @@
         private PurchaseRptData purchaseRptData;
         private System.Windows.Forms.BindingSource purchaseorderBindingSource;
         private PurchaseRptDataTableAdapters.purchase_orderTableAdapter purchase_orderTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vendornameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn amtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn paidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn balDataGridViewTextBoxColumn;
         private PURCHASEORDER pURCHASEORDER;
         private System.Windows.Forms.BindingSource purchaseorderBindingSource1;
         private PURCHASEORDERTableAdapters.purchase_orderTableAdapter purchase_orderTableAdapter1;
@@ -351,8 +431,23 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label16;
-        private GSTDataSet7 gSTDataSet7;
-        private System.Windows.Forms.BindingSource billsBindingSource;
-        private GSTDataSet7TableAdapters.BillsTableAdapter billsTableAdapter;
+        private GSTDataSet8 gSTDataSet8;
+        private System.Windows.Forms.BindingSource billTaxBindingSource;
+        private GSTDataSet8TableAdapters.Bill_TaxTableAdapter bill_TaxTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateIDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn taxDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cTADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAmtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sTADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sAmtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iTADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iAmtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGSTtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sGSTtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn refDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

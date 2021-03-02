@@ -314,6 +314,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GSTDataSet61.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GSTDataSet71.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSTDataSet71.xsd</DependentUpon>
+    </Compile>
     <Compile Include="inv.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -894,6 +899,17 @@
     </None>
     <None Include="GSTDataSet61.xss">
       <DependentUpon>GSTDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="GSTDataSet71.xsc">
+      <DependentUpon>GSTDataSet71.xsd</DependentUpon>
+    </None>
+    <None Include="GSTDataSet71.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSTDataSet71.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSTDataSet71.xss">
+      <DependentUpon>GSTDataSet71.xsd</DependentUpon>
     </None>
     <None Include="InvoiceDataSet.xsc">
       <DependentUpon>InvoiceDataSet.xsd</DependentUpon>

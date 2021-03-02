@@ -23,7 +23,7 @@ namespace gst
         {
             try
             {
-                string s = PurchaseOrder.abdef;
+                string s =PurchaseOrder.abdef;
                 MessageBox.Show(s);
                 string q1 = "SELECT * FROM [pur_detail] where Purchase_orderID='" + s + "'";
                 SqlCeConnection con = new SqlCeConnection(Properties.Settings.Default.conne);
@@ -40,14 +40,7 @@ namespace gst
                 crystalReportViewer1.ReportSource = null;
                 crystalReportViewer1.ReportSource = p;
 
-                //ReportDocument crystal = new ReportDocument();
-                //string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
-                //path = System.IO.Directory.GetParent(System.IO.Directory.GetParent(path).ToString()).ToString();
-                //path = System.IO.Path.Combine(path, "POR.rpt");
-                //crystal.Load("C:\\VensarkBill\\Rest\\POR.rpt");
-                //crystal.SetDataSource(dt);
-                //crystalReportViewer1.ReportSource = crystal;
-                //crystalReportViewer1.Refresh();
+              
             }
             catch (Exception exc1)
             {

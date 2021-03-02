@@ -280,7 +280,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(55, 26);
             this.textBox5.TabIndex = 205;
-            this.textBox5.Text = "#REN-";
+            this.textBox5.Text = "#LAX-";
             // 
             // label7
             // 
